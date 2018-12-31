@@ -149,6 +149,12 @@ DEVICE_PACKAGE_OVERLAYS += vendor/spark/overlay/common
 
 include packages/overlays/Themes/themes.mk
 
+# Cutout control overlays
+PRODUCT_PACKAGES += \
+    HideCutout \
+    StatusBarStock
+
+
 # GVM
 PRODUCT_PACKAGES += \
     GVM-SBH-L \
