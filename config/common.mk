@@ -152,7 +152,8 @@ PRODUCT_PACKAGES += \
     QStileWavey \
     QStileCookie \
     QStileInkDrop \
-    QStileSquaremedo
+    QStileSquaremedo \
+    QStileCircleOutline
 
 # Navbar
 PRODUCT_PACKAGES += \
