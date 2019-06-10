@@ -153,6 +153,11 @@ PRODUCT_PACKAGES += \
     QStileCookie \
     QStileInkDrop \
     QStileSquaremedo \
+    QStileCosmos \
+    QStileDividedCircle \
+    QStileNeonLight \
+    QStileOxygen \
+    QStileTriangles \
     QStileCircleOutline
 
 # Navbar
