@@ -99,6 +99,17 @@ include vendor/spark/config/packages.mk
 # Inherit from audio config
 $(call inherit-product, vendor/spark/config/audio.mk)
 
+# Custom Overlays
+# Settings
+PRODUCT_PACKAGES += \
+    SystemPitchBlackOverlay \
+    SystemDarkGrayOverlay \
+    SystemUIDarkGrayOverlay \
+    SystemStyleOverlay \
+    SystemUIStyleOverlay \
+    SystemNightOverlay \
+    SystemUINightOverlay
+
 # Branding
 include vendor/spark/config/branding.mk
 
