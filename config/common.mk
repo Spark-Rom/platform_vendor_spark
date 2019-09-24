@@ -113,7 +113,8 @@ endif
 
 # Config
 PRODUCT_PACKAGES += \
-    SimpleDeviceConfig
+    SimpleDeviceConfig \
+    SettingsIntelligenceGooglePrebuilt
 
 # Storage manager
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
@@ -122,6 +123,10 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # These packages are excluded from user builds
 PRODUCT_PACKAGES_DEBUG += \
     procmem
+
+# Permissions
+PRODUCT_COPY_FILES += \
+    vendor/spark/config/permissions/privapp-permissions-spark-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-spark.xml
 
 # Root
 PRODUCT_PACKAGES += \
