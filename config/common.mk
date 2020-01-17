@@ -103,6 +103,7 @@ $(call inherit-product, vendor/spark/config/audio.mk)
 # Settings
 PRODUCT_PACKAGES += \
     SystemPitchBlackOverlay \
+    SystemUIPitchBlackOverlay \
     SystemDarkGrayOverlay \
     SystemUIDarkGrayOverlay \
     SystemStyleOverlay \
