@@ -109,7 +109,9 @@ PRODUCT_PACKAGES += \
     SystemStyleOverlay \
     SystemUIStyleOverlay \
     SystemNightOverlay \
-    SystemUINightOverlay
+    SystemUINightOverlay \
+    SystemSolarizedDarkOverlay \
+    SystemUISolarizedDarkOverlay
 
 # Branding
 include vendor/spark/config/branding.mk
