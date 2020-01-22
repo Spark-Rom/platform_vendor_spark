@@ -113,7 +113,11 @@ PRODUCT_PACKAGES += \
     SystemSolarizedDarkOverlay \
     SystemUISolarizedDarkOverlay \
     SystemMaterialOceanOverlay \
-    SystemUIMaterialOceanOverlay
+    SystemUIMaterialOceanOverlay \
+    SystemBakedGreenOverlay \
+    SystemUIBakedGreenOverlay \
+    SystemChocoXOverlay \
+    SystemUIChocoXOverlay
 
 # Branding
 include vendor/spark/config/branding.mk
