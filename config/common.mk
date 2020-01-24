@@ -105,6 +105,10 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 TARGET_SCREEN_WIDTH ?= 1080
 TARGET_SCREEN_HEIGHT ?= 1920
 
+# Charger
+PRODUCT_PACKAGES += \
+    product_charger_res_images
+
 # Storage manager
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.storage_manager.enabled=true
