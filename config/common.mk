@@ -240,6 +240,11 @@ PRODUCT_PACKAGES += \
     FodAnimationResources
 endif
 
+# Offline charger
+PRODUCT_PACKAGES += \
+    charger_res_images \
+    product_charger_res_images
+
 # Plugins
 include packages/apps/Plugins/plugins.mk
 
