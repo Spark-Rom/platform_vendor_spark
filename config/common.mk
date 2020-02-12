@@ -92,5 +92,8 @@ PRODUCT_PACKAGES += \
 # Packages
 include vendor/spark/config/packages.mk
 
+# Inherit from audio config
+$(call inherit-product, vendor/spark/config/audio.mk)
+
 # Branding
 include vendor/spark/config/branding.mk
