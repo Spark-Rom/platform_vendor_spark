@@ -43,7 +43,6 @@ except ImportError:
     urllib.request = urllib2
 
 DEBUG = False
-default_manifest = ".repo/manifest.xml"
 
 custom_local_manifest = ".repo/local_manifests/spark_manifest.xml"
 custom_default_revision = "fire"
@@ -52,7 +51,6 @@ org_manifest = "devices"  # leave empty if org is provided in manifest
 org_display = "Spark-Devices"  # needed for displaying
 
 github_auth = None
-
 
 local_manifests = '.repo/local_manifests'
 if not os.path.exists(local_manifests):
@@ -97,6 +95,18 @@ def indent(elem, level=0):
         if level and (not elem.tail or not elem.tail.strip()):
             elem.tail = i
 
+def get_manifest_path():
+    '''Find the current manifest path
+    In old versions of repo this is at .repo/manifest.xml
+    In new versions, .repo/manifest.xml includes an include
+    to some arbitrary file in .repo/manifests'''
+
+    m = ElementTree.parse(".repo/manifest.xml")
+    try:
+        m.findall('default')[0]
+        return '.repo/manifest.xml'
+    except IndexError:
+        return ".repo/manifests/{}".format(m.find("include").get("name"))
 
 def load_manifest(manifest):
     try:
@@ -107,13 +117,13 @@ def load_manifest(manifest):
 
 
 def get_default(manifest=None):
-    m = manifest or load_manifest(default_manifest)
+    m = manifest or load_manifest(get_manifest_path())
     d = m.findall('default')[0]
     return d
 
 
 def get_remote(manifest=None, remote_name=None):
-    m = manifest or load_manifest(default_manifest)
+    m = manifest or load_manifest(get_manifest_path())
     if not remote_name:
         remote_name = get_default(manifest=m).get('remote')
     remotes = m.findall('remote')
