@@ -244,7 +244,11 @@ PRODUCT_PACKAGES += \
     GesturalNavigationOverlayMedium \
     GesturalNavigationRadiusLow \
     GesturalNavigationRadiusVeryLow \
-    GesturalNavigationRadiusHidden
+    GesturalNavigationRadiusHidden \
+    AsusNavbarOverlay \
+    OnePlusNavbarOverlay \
+    OneUiNavbarOverlay \
+    TecnoCamonNavbarOverlay
 
 # Fonts
 PRODUCT_PACKAGES += \
