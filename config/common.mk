@@ -248,7 +248,12 @@ PRODUCT_PACKAGES += \
     AsusNavbarOverlay \
     OnePlusNavbarOverlay \
     OneUiNavbarOverlay \
-    TecnoCamonNavbarOverlay
+    TecnoCamonNavbarOverlay \
+    MotoNavbarOverlay \
+    NexusNavbarOverlay \
+    OldNavbarOverlay \
+    AndroidNavbarOverlay \
+    SammyNavbarOverlay
 
 # Fonts
 PRODUCT_PACKAGES += \
