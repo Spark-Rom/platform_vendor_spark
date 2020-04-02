@@ -10,7 +10,10 @@ PRODUCT_PACKAGES += \
     SparkThemesStub \
     QuickAccessWallet \
     Updater \
-    Flipendo
+    Flipendo \
+    StitchImage \
+    StitchImageService
+
 
 ifneq ($(WITH_GAPPS), true)
 include vendor/opstuff/config.mk
