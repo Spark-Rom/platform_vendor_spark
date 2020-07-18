@@ -117,7 +117,9 @@ PRODUCT_PACKAGES += \
     SystemBakedGreenOverlay \
     SystemUIBakedGreenOverlay \
     SystemChocoXOverlay \
-    SystemUIChocoXOverlay
+    SystemUIChocoXOverlay \
+    SystemDarkAubergineOverlay \
+    SystemUIDarkAubergineOverlay
 
 # Branding
 include vendor/spark/config/branding.mk
