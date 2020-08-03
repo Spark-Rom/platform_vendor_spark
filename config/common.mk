@@ -116,6 +116,15 @@ DEVICE_PACKAGE_OVERLAYS += vendor/spark/overlay/common
 
 include packages/overlays/Themes/themes.mk
 
+# GVM
+PRODUCT_PACKAGES += \
+    GVM-SBH-L \
+    GVM-SBH-M \
+    GVM-SBH-XL \
+    GVM-URM-M \
+    GVM-URM-L \
+    GVM-URM-R
+
 # Custom Overlays
 # Settings
 PRODUCT_PACKAGES += \
