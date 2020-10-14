@@ -1,13 +1,4 @@
 bootstrap_go_package {
-    name: "soong-spark",
-    pkgPath: "spark/soong/android",
-    srcs: [
-        "android/config.go",
-        "android/variable.go",
-    ],
-}
-
-bootstrap_go_package {
     name: "soong-spark-generator",
     pkgPath: "spark/soong/generator",
     deps: [
