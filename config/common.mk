@@ -16,7 +16,7 @@ PRODUCT_COPY_FILES += \
     vendor/spark/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
     vendor/spark/prebuilt/common/bin/50-base.sh:system/addon.d/50-base.sh \
 
-ifeq ($(AB_OTA_UPDATER),true)
+ifneq ($(AB_OTA_PARTITIONS),)
 PRODUCT_COPY_FILES += \
     vendor/spark/prebuilt/common/bin/backuptool_ab.sh:system/bin/backuptool_ab.sh \
     vendor/spark/prebuilt/common/bin/backuptool_ab.functions:system/bin/backuptool_ab.functions \
