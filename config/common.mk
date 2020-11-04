@@ -111,6 +111,10 @@ PRODUCT_PACKAGES += \
     product_charger_res_images
 endif
 
+# Config
+PRODUCT_PACKAGES += \
+    SimpleDeviceConfig
+
 # Storage manager
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.storage_manager.enabled=true
