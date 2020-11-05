@@ -16,6 +16,16 @@ PRODUCT_COPY_FILES += \
     vendor/spark/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
     vendor/spark/prebuilt/common/bin/50-base.sh:system/addon.d/50-base.sh \
 
+# backuptool
+PRODUCT_COPY_FILES += \
+    vendor/spark/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
+    vendor/spark/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
+    vendor/spark/prebuilt/common/bin/50-base.sh:system/addon.d/50-base.sh
+
+# system mount
+PRODUCT_COPY_FILES += \
+    vendor/spark/prebuilt/common/bin/system-mount.sh:install/bin/system-mount.sh
+
 ifneq ($(AB_OTA_PARTITIONS),)
 PRODUCT_COPY_FILES += \
     vendor/spark/prebuilt/common/bin/backuptool_ab.sh:system/bin/backuptool_ab.sh \
