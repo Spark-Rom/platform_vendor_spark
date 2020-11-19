@@ -141,6 +141,10 @@ vendor/spark/bootanimation/bootanimation.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bo
 # Packages
 include vendor/spark/config/packages.mk
 
+# DocumentsUI
+PRODUCT_PACKAGES += \
+    PixelDocumentsUIGoogleOverlay
+
 # Inherit from audio config
 $(call inherit-product, vendor/spark/config/audio.mk)
 
