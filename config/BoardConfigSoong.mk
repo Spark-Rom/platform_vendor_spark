@@ -53,6 +53,12 @@ SOONG_CONFIG_sparkQcomVars += \
     uses_qcom_bsp_legacy \
     uses_qti_camera_device
 
+# Only create soong_namespace var if dealing with UM platforms to avoid breaking build for all other platforms
+ifneq ($(filter $(UM_PLATFORMS),$(PRODUCT_BOARD_PLATFORM)),)
+SOONG_CONFIG_sparkQcomVars += \
+    qcom_soong_namespace
+endif
+
 # Set default values
 BOOTLOADER_MESSAGE_OFFSET ?= 0
 TARGET_INIT_VENDOR_LIB ?= vendor_init
@@ -77,3 +83,6 @@ SOONG_CONFIG_sparkQcomVars_supports_hw_fde_perf := $(TARGET_HW_DISK_ENCRYPTION_P
 SOONG_CONFIG_sparkQcomVars_uses_pre_uplink_features_netmgrd := $(TARGET_USES_PRE_UPLINK_FEATURES_NETMGRD)
 SOONG_CONFIG_sparkQcomVars_uses_qcom_bsp_legacy := $(TARGET_USES_QCOM_BSP_LEGACY)
 SOONG_CONFIG_sparkQcomVars_uses_qti_camera_device := $(TARGET_USES_QTI_CAMERA_DEVICE)
+ifneq ($(filter $(UM_PLATFORMS),$(PRODUCT_BOARD_PLATFORM)),)
+SOONG_CONFIG_sparkQcomVars_qcom_soong_namespace := $(QCOM_SOONG_NAMESPACE)
+endif
