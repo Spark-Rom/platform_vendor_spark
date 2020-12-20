@@ -13,7 +13,8 @@ PRODUCT_PACKAGES += \
     Flipendo \
     StitchImage \
     StitchImageService \
-    PulseMusic
+    PulseMusic \
+    SimpleDeviceConfig
 
 
 ifneq ($(WITH_GAPPS), true)
