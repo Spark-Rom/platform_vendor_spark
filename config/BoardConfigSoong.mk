@@ -41,7 +41,8 @@ SOONG_CONFIG_sparkGlobalVars += \
     target_ld_shim_libs \
     target_process_sdk_version_override \
     target_surfaceflinger_fod_lib \
-    uses_camera_parameter_lib
+    uses_camera_parameter_lib \
+    target_inputdispatcher_skip_event_key
 
 SOONG_CONFIG_NAMESPACES += sparkQcomVars
 SOONG_CONFIG_sparkQcomVars += \
@@ -62,12 +63,12 @@ endif
 # Set default values
 BOOTLOADER_MESSAGE_OFFSET ?= 0
 TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS ?= 0
+TARGET_INPUTDISPATCHER_SKIP_EVENT_KEY ?= 0
 TARGET_INIT_VENDOR_LIB ?= vendor_init
 TARGET_SPECIFIC_CAMERA_PARAMETER_LIBRARY ?= libcamera_parameters
 TARGET_SURFACEFLINGER_FOD_LIB ?= surfaceflinger_fod_lib
 
 # Soong variables
-<<<<<<< HEAD
 SOONG_CONFIG_sparkGlobalVars_additional_gralloc_10_usage_bits := $(TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS)
 SOONG_CONFIG_sparkGlobalVars_bootloader_message_offset := $(BOOTLOADER_MESSAGE_OFFSET)
 SOONG_CONFIG_sparkGlobalVars_has_legacy_camera_hal1 := $(TARGET_HAS_LEGACY_CAMERA_HAL1)
@@ -75,6 +76,7 @@ SOONG_CONFIG_sparkGlobalVars_ignores_ftp_pptp_conntrack_failure := $(TARGET_IGNO
 SOONG_CONFIG_sparkGlobalVars_needs_netd_direct_connect_rule := $(TARGET_NEEDS_NETD_DIRECT_CONNECT_RULE)
 SOONG_CONFIG_sparkGlobalVars_target_init_vendor_lib := $(TARGET_INIT_VENDOR_LIB)
 SOONG_CONFIG_sparkGlobalVars_target_ld_shim_libs := $(subst $(space),:,$(TARGET_LD_SHIM_LIBS))
+SOONG_CONFIG_sparkGlobalVars_target_inputdispatcher_skip_event_key := $(TARGET_INPUTDISPATCHER_SKIP_EVENT_KEY)
 SOONG_CONFIG_sparkGlobalVars_target_process_sdk_version_override := $(TARGET_PROCESS_SDK_VERSION_OVERRIDE)
 SOONG_CONFIG_sparkGlobalVars_target_surfaceflinger_fod_lib := $(TARGET_SURFACEFLINGER_FOD_LIB)
 SOONG_CONFIG_sparkGlobalVars_uses_camera_parameter_lib := $(TARGET_SPECIFIC_CAMERA_PARAMETER_LIBRARY)
@@ -85,6 +87,7 @@ SOONG_CONFIG_sparkQcomVars_supports_hw_fde_perf := $(TARGET_HW_DISK_ENCRYPTION_P
 SOONG_CONFIG_sparkQcomVars_uses_pre_uplink_features_netmgrd := $(TARGET_USES_PRE_UPLINK_FEATURES_NETMGRD)
 SOONG_CONFIG_sparkQcomVars_uses_qcom_bsp_legacy := $(TARGET_USES_QCOM_BSP_LEGACY)
 SOONG_CONFIG_sparkQcomVars_uses_qti_camera_device := $(TARGET_USES_QTI_CAMERA_DEVICE)
+
 ifneq ($(filter $(QSSI_SUPPORTED_PLATFORMS),$(PRODUCT_BOARD_PLATFORM)),)
 SOONG_CONFIG_sparkQcomVars_qcom_display_headers_namespace := vendor/qcom/opensource/commonsys-intf/display
 else
