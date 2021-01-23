@@ -12,7 +12,7 @@ CURRENT_DEVICE := $(shell echo "$(TARGET_PRODUCT)" | cut -d'_' -f 2,3)
 LIST := $(shell cat vendor/spark/spark.devices)
 
 ifeq ($(filter $(CURRENT_DEVICE), $(LIST)), $(CURRENT_DEVICE))
-    ifeq ($(filter-out Officla OFFICIAL, $(SPARK_BUILD_TYPE)),)
+    ifeq ($(filter-out Official OFFICIAL, $(SPARK_BUILD_TYPE)),)
         ifeq ($(SPARK_BUILD_TYPE), Official)
           BUILD_TYPE := Official
         endif
