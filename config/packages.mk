@@ -8,6 +8,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Launcher3 \
     ThemePicker \
+    SoftAPManager \
     SparkThemesStub \
     QuickAccessWallet \
     Updater \
