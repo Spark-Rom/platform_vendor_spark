@@ -84,7 +84,7 @@ PRODUCT_COPY_FILES += \
     vendor/spark/prebuilt/common/etc/permissions/privapp-permissions-elgoog.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-elgoog.xml \
     vendor/spark/config/permissions/pixel_experience_2020.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_experience_2020.xml \
     vendor/spark/config/permissions/permissions-spark-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/permissions-spark-product.xml \
-    vendor/spark/config/permissions/privapp-permissions-livedisplay.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-livedisplay.xml
+    vendor/spark/config/permissions/privapp-permissions-livedisplay.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-livedisplay.xml
 
 # Set custom volume steps
 PRODUCT_PROPERTY_OVERRIDES += \
