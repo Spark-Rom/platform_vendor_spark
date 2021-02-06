@@ -16,9 +16,32 @@
 # -----------------------------------------------------------------
 # Spark OTA update package
 
+# Build system colors
+
+ifneq ($(BUILD_WITH_COLORS),0)
+	CL_RED="\033[31m"
+	CL_GRN="\033[32m"
+	CL_YLW="\033[33m"
+	CL_BLU="\033[34m"
+	CL_MAG="\033[35m"
+	CL_CYN="\033[36m"
+	CL_RST="\033[0m"
+endif
+
 SPARK_TARGET_PACKAGE := $(PRODUCT_OUT)/$(SPARK_VERSION).zip
 
 .PHONY: spark
+
 spark: $(INTERNAL_OTA_PACKAGE_TARGET)
 	$(hide) ln -f $(INTERNAL_OTA_PACKAGE_TARGET) $(SPARK_TARGET_PACKAGE)
 	@echo "Package Complete: $(SPARK_TARGET_PACKAGE)" >&2
+	echo -e ${CL_RED}         "  _________                   __             ________    _________	"${CL_RST}
+	echo -e ${CL_YLW}         " /   _____/__________ _______|  | __         \_____  \  /   _____/	"${CL_RST}
+	echo -e ${CL_RED}         " \_____  \\____ \__  \\_  __ \  |/ /  ______  /   |   \ \_____  \	"${CL_RST}
+	echo -e ${CL_YLW}         " /        \  |_> > __ \|  | \/    <  /_____/ /    |    \/        \	"${CL_RST}
+	echo -e ${CL_YLW}         "/_______  /   __(____  /__|  |__|_ \         \_______  /_______  /	"${CL_RST}
+	echo -e ${CL_YLW}         "        \/|__|       \/           \/                 \/        \/	"${CL_RST}
+	echo -e ${CL_BLD}${CL_CYN}"====================================================="${CL_RST}
+	echo -e ${CL_BLD}${CL_RED}"Zip: "${CL_YLW} $(SPARK_TARGET_PACKAGE) ${CL_RST}
+	echo -e ${CL_BLD}${CL_RED}"Size:"${CL_YLW}" `du -sh $(SPARK_TARGET_PACKAGE) | awk '{print $$1}' `"${CL_RST}
+	echo -e ${CL_BLD}${CL_CYN}"====================================================="${CL_RST}
