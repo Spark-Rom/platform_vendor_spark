@@ -28,12 +28,12 @@ endif
 
 TARGET_PRODUCT_SHORT := $(subst spark_,,$(TARGET_PRODUCT))
 
-SPARK_VERSION := Spark-v$(SPARK_STATUS)-$(TARGET_PRODUCT_SHORT)-$(shell date -u +%Y%m%d)-$(SPARK_BUILD_TYPE)
+SPARK_VERSION := Spark-$(SPARK_STATUS)-$(TARGET_PRODUCT_SHORT)-$(shell date -u +%Y%m%d)-$(SPARK_BUILD_TYPE)
 
-SPARK_BRANDING_VERSION := $(SPARK_BUILD_TYPE)
+SPARK_BRANDING_VERSION = Fire
 
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_GENERIC_PROPERTIES += \
   ro.build.project=spark \
-  ro.spark.version=$(SPARK_VERSION) \
-  ro.spark.status=$(SPARK_STATUS) \
-  ro.spark.branding.version=$(SPARK_BRANDING_VERSION)
+  ro.spark.version=1.0 \
+  ro.spark.status=Beta \
+  ro.spark.branding.version=Fire
