@@ -89,6 +89,10 @@ PRODUCT_PACKAGES += \
     CustomLauncherOverlay \
     CustomSettingsOverlay
 
+# Bootanimation
+PRODUCT_COPY_FILES += \
+vendor/spark/bootanimation/bootanimation.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
+
 # Packages
 include vendor/spark/config/packages.mk
 
