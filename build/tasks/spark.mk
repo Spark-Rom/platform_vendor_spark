@@ -30,10 +30,13 @@ endif
 
 SPARK_TARGET_PACKAGE := $(PRODUCT_OUT)/$(SPARK_VERSION).zip
 
+MD5 := prebuilts/build-tools/path/$(HOST_OS)-x86/md5sum
+
 .PHONY: spark
 
 spark: $(INTERNAL_OTA_PACKAGE_TARGET)
 	$(hide) ln -f $(INTERNAL_OTA_PACKAGE_TARGET) $(SPARK_TARGET_PACKAGE)
+	$(hide) $(MD5) $(SPARK_TARGET_PACKAGE) | sed "s|$(PRODUCT_OUT)/||" > $(SPARK_TARGET_PACKAGE).md5
 	@echo "Package Complete: $(SPARK_TARGET_PACKAGE)" >&2
 	echo -e ${CL_RED}         "  _________                   __             ________    _________	"${CL_RST}
 	echo -e ${CL_YLW}         " /   _____/__________ _______|  | __         \_____  \  /   _____/	"${CL_RST}
