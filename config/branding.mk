@@ -1,4 +1,5 @@
 SPARK_STATUS = BETA
+SPARK_BUILD_VARIANT := vanilla
 
 ifndef SPARK_BUILD_TYPE
     SPARK_BUILD_TYPE := Unofficial
@@ -26,9 +27,15 @@ else
     endif
 endif
 
+# Gapps
+ifeq ($(WITH_GAPPS), true)
+    $(call inherit-product, vendor/gapps/config.mk)
+    SPARK_BUILD_VARIANT := gapps
+endif
+
 TARGET_PRODUCT_SHORT := $(subst spark_,,$(TARGET_PRODUCT))
 
-SPARK_VERSION := Spark-$(SPARK_STATUS)-$(TARGET_PRODUCT_SHORT)-$(shell date -u +%Y%m%d)-$(SPARK_BUILD_TYPE)
+SPARK_VERSION := Spark-v$(SPARK_STATUS)-$(TARGET_PRODUCT_SHORT)-$(SPARK_BUILD_TYPE)-$(SPARK_BUILD_VARIANT)-$(shell date -u +%Y%m%d)
 
 SPARK_BRANDING_VERSION = Fire
 
@@ -36,4 +43,5 @@ PRODUCT_GENERIC_PROPERTIES += \
   ro.build.project=spark \
   ro.spark.version=1.0 \
   ro.spark.status=Beta \
-  ro.spark.branding.version=Fire
+  ro.spark.branding.version=Fire \
+  ro.spark.build.variant=$(SPARK_BUILD_VARIANT)
