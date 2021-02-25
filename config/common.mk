@@ -141,7 +141,10 @@ PRODUCT_PACKAGES += \
     GVM-PGM-PURP \
     GVM-PGM-ROSE
 
-
+# QS Header size
+PRODUCT_PACKAGES += \
+    HeaderLarge \
+    HeaderXLarge
 
 # Custom Overlays
 # Settings
