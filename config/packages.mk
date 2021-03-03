@@ -7,9 +7,9 @@ PRODUCT_PACKAGES += \
 # Required packages
 PRODUCT_PACKAGES += \
     ThemePicker \
-    SparkThemesStub
+    SparkThemesStub \
+    QuickAccessWallet
 
-# Extra tools in Octavi
 PRODUCT_PACKAGES += \
     7z \
     awk \
