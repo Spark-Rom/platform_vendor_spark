@@ -13,6 +13,12 @@ else
 PRODUCT_SOONG_NAMESPACES += packages/apps/Bluetooth
 endif
 
+# Treble
+# Enable ALLOW_MISSING_DEPENDENCIES on Vendorless Builds
+ifeq ($(BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE),)
+  ALLOW_MISSING_DEPENDENCIES := true
+endif
+
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.clientidbase=android-google
