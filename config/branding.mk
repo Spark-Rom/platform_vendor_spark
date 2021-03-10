@@ -31,7 +31,7 @@ endif
 
 # Gapps
 ifeq ($(WITH_GAPPS), true)
-    $(call inherit-product, vendor/gapps/config.mk)
+    $(call inherit-product, vendor/gms/products/gms.mk)
     SPARK_BUILD_VARIANT := gapps
 endif
 
