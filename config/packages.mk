@@ -10,6 +10,10 @@ PRODUCT_PACKAGES += \
     SparkThemesStub \
     QuickAccessWallet
 
+ifneq ($(WITH_GAPPS), true)
+include vendor/opstuff/config.mk
+endif
+
 PRODUCT_PACKAGES += \
     7z \
     awk \
