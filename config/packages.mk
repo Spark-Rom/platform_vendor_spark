@@ -7,8 +7,7 @@ PRODUCT_PACKAGES += \
 # Required packages
 PRODUCT_PACKAGES += \
     ThemePicker \
-    SparkThemesStub \
-    TurboPrebuilt
+    SparkThemesStub
 
 # Extra tools in Octavi
 PRODUCT_PACKAGES += \
