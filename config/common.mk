@@ -141,6 +141,14 @@ PRODUCT_PACKAGES += \
     GVM-PGM-PURP \
     GVM-PGM-ROSE
 
+# Switch themes
+PRODUCT_PACKAGES += \
+    SwitchAOSP \
+    SwitchContained \
+    SwitchTelegram \
+    SwitchRetro \
+    SwitchMD2
+
 # QS Header size
 PRODUCT_PACKAGES += \
     HeaderLarge \
