@@ -8,7 +8,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ThemePicker \
     SparkThemesStub \
-    QuickAccessWallet
+    QuickAccessWallet \
+    Updater
 
 ifneq ($(WITH_GAPPS), true)
 include vendor/opstuff/config.mk
