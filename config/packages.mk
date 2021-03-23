@@ -9,7 +9,8 @@ PRODUCT_PACKAGES += \
     ThemePicker \
     SparkThemesStub \
     QuickAccessWallet \
-    Updater
+    Updater \
+    Flipendo
 
 ifneq ($(WITH_GAPPS), true)
 include vendor/opstuff/config.mk
