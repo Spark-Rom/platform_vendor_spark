@@ -171,3 +171,6 @@ PRODUCT_PACKAGES += \
     FodAnimationResources
 endif
 
+# Plugins
+include packages/apps/Plugins/plugins.mk
+
