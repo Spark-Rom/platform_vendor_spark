@@ -28,4 +28,8 @@
     <privapp-permissions package="android.ext.services">
         <permission name="android.permission.PROVIDE_RESOLVER_RANKER_SERVICE"/>
     </privapp-permissions>
+
+    <privapp-permissions package="com.asus.stitchimage.service">
+        <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+    </privapp-permissions>
 </permissions>
