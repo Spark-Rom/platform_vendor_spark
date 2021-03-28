@@ -1,4 +1,5 @@
 ADDITIONAL_BUILD_PROPERTIES += \
+  ro.build.datetime=$(BUILD_DATE_TIME) \
   ro.build.project=spark \
   ro.spark.build.type=$(SPARK_BUILD_TYPE) \
   ro.spark.version=$(SPARK_VERSION) \
