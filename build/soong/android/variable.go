@@ -24,18 +24,18 @@ type Product_variables struct {
 	Target_process_sdk_version_override struct {
 		Cppflags []string
 	}
-	Supports_hw_fde struct {
+	Device_support_hwfde struct {
 		Cflags []string
 		Header_libs []string
 		Shared_libs []string
 	}
-	Supports_hw_fde_perf struct {
+	Device_support_hwfde_perf struct {
 		Cflags []string
 	}
 	Device_support_legacy_hwfde struct {
 		Cflags []string
 	}
-	Should_wait_for_qsee struct {
+	Device_support_wait_for_qsee struct {
 		Cflags []string
 	}
 	Supports_extended_compress_format struct {
@@ -54,9 +54,6 @@ type Product_variables struct {
 		Cflags []string
 		Whole_static_libs []string
 	}
-        Target_uses_prebuilt_dynamic_partitions struct {
-		Cflags []string
-	}
 	Uses_generic_camera_parameter_library struct {
 		Srcs []string
 	}
@@ -68,20 +65,16 @@ type Product_variables struct {
 		Cppflags []string
 		Shared_libs []string
 	}
-        Needs_camera_boottime_timestamp struct {
-		Cflags []string
-		Srcs []string
-	}
 }
 
 type ProductVariables struct {
 	Additional_gralloc_10_usage_bits  *string `json:",omitempty"`
 	Bootloader_message_offset  *int `json:",omitempty"`
 	Has_legacy_camera_hal1  *bool `json:",omitempty"`
+	Device_support_hwfde  *bool `json:",omitempty"`
+	Device_support_hwfde_perf  *bool `json:",omitempty"`
 	Device_support_legacy_hwfde  *bool `json:",omitempty"`
-        Supports_hw_fde  *bool `json:",omitempty"`
-	Supports_hw_fde_perf  *bool `json:",omitempty"`
-	Should_wait_for_qsee  *bool `json:",omitempty"`
+	Device_support_wait_for_qsee  *bool `json:",omitempty"`
 	Java_Source_Overlays *string `json:",omitempty"`
 	Needs_text_relocations  *bool `json:",omitempty"`
 	Qcom_um_soong_namespace  *string `json:",omitempty"`
@@ -90,13 +83,10 @@ type ProductVariables struct {
 	Target_init_vendor_lib  *string `json:",omitempty"`
 	Target_process_sdk_version_override  *string `json:",omitempty"`
 	Target_shim_libs  *string `json:",omitempty"`
-        Target_specific_header_path  *string `json:",omitempty"`
 	Target_needs_netd_direct_connect_rule  *bool `json:",omitempty"`
 	Target_ignores_ftp_pptp_conntrack_failure  *bool `json:",omitempty"`
 	Target_surfaceflinger_fod_lib  *string `json:",omitempty"`
-        Target_uses_prebuilt_dynamic_partitions  *bool `json:",omitempty"`
 	Uses_generic_camera_parameter_library  *bool `json:",omitempty"`
 	Uses_qcom_bsp_legacy  *bool `json:",omitempty"`
 	Uses_qti_camera_device  *bool `json:",omitempty"`
-        Needs_camera_boottime_timestamp  *bool `json:",omitempty"`
 }
