@@ -178,6 +178,10 @@ PRODUCT_PACKAGES += \
     HeaderLarge \
     HeaderXLarge
 
+# QS Color Overlay
+PRODUCT_PACKAGES += \
+    QsColor
+
 # Custom Overlays
 # Settings
 PRODUCT_PACKAGES += \
