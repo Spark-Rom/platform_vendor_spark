@@ -12,7 +12,8 @@ PRODUCT_PACKAGES += \
     Updater \
     Flipendo \
     StitchImage \
-    StitchImageService
+    StitchImageService \
+    PulseMusic
 
 
 ifneq ($(WITH_GAPPS), true)
