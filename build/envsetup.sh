@@ -103,7 +103,7 @@ alias bib=breakfast
 function eat()
 {
     if [ "$OUT" ] ; then
-        ZIPPATH=`ls -tr "$OUT"/spark-*.zip | tail -1`
+        ZIPPATH=`ls -tr "$OUT"/Spark-*.zip | tail -1`
         if [ ! -f $ZIPPATH ] ; then
             echo "Nothing to eat"
             return 1
@@ -260,14 +260,13 @@ function dddclient()
 function gerritpush()
 {
 
-    GERRIT_URL=review.spark.com;
+    GERRIT_URL=review.spark-os.live;
     DEFAULT_BRANCH=fire;
     PROJECT_PREFIX=;
     ref=for;
 
     local PROJECT_EXCLUSIONS=(
-        "device_qcom_sepolicy"
-        "device_spark_sepolicy"
+        "packages_apps_Launcher3"
     );
 
     while getopts "tdb" OPTION; do
@@ -302,7 +301,7 @@ function gerritpush()
     fi
     if (echo $PROJECT | grep -qv "^device") || [[ "${PROJECT_EXCLUSIONS[@]}" =~ "$PROJECT" ]]
     then
-      local PFX="Spark/";
+      local PFX="";
     else
       local PFX="SPARK-Devices/";
     fi
@@ -319,9 +318,9 @@ function gerritpush()
     if [[ "${USE_TOPIC}" == true ]]; then
       printf 'Enter topic: '
       read -r topic;
-      git push ssh://${GERRIT_USER}@${GERRIT_URL}:29418/$PFX$PROJECT HEAD:refs/${ref}/${DEFAULT_BRANCH}%topic=${topic};
+      git push ssh://${GERRIT_USER}@${GERRIT_URL}:29418/$PROJECT HEAD:refs/${ref}/${DEFAULT_BRANCH}%topic=${topic};
     else
-      git push ssh://${GERRIT_USER}@${GERRIT_URL}:29418/$PFX$PROJECT HEAD:refs/${ref}/${DEFAULT_BRANCH};
+      git push ssh://${GERRIT_USER}@${GERRIT_URL}:29418/$PROJECT HEAD:refs/${ref}/${DEFAULT_BRANCH};
     fi
     unset USE_TOPIC;
 }
@@ -505,8 +504,8 @@ function mka() {
 
 function mergeaosptag()
 {
-  username=NurKeinNeid
-  default_branch=11
+  username=spkal01
+  default_branch=fire
 
   for var in "$@"
   do
