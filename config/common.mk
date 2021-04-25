@@ -4,15 +4,6 @@ endif
 
 PRODUCT_SOONG_NAMESPACES += $(PATHMAP_SOONG_NAMESPACES)
 
-# Required for QTI BT Stack
-ifeq ($(TARGET_USE_QTI_BT_STACK),true)
-PRODUCT_SOONG_NAMESPACES += \
-    vendor/qcom/opensource/commonsys/packages/apps/Bluetooth \
-    vendor/qcom/opensource/commonsys/system/bt/conf
-else
-PRODUCT_SOONG_NAMESPACES += packages/apps/Bluetooth
-endif
-
 # IORap app launch prefetching using Perfetto traces and madvise
 PRODUCT_PRODUCT_PROPERTIES += \
     iorapd.perfetto.enable=true \
