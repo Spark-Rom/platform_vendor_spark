@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 	<dimen name="qs_quick_tile_padding">16.0dip</dimen>
-    <dimen name="qs_quick_tile_size">52.0dip</dimen>
+    <dimen name="qs_quick_tile_size">56.0dip</dimen>
     <dimen name="qs_quick_tile_space_width">0.0dip</dimen>
-    <dimen name="qs_tile_height">104.0dip</dimen>
-    <dimen name="qs_tile_icon_size">20.0dip</dimen>
+    <dimen name="qs_tile_height">106.0dip</dimen>
+    <dimen name="qs_tile_icon_size">26.0dip</dimen>
     <dimen name="qs_tile_layout_margin_side">6.0dip</dimen>
     <dimen name="qs_tile_margin_bottom">0.0dip</dimen>
     <dimen name="qs_tile_margin_horizontal">10.0dip</dimen>
