@@ -242,6 +242,10 @@ PRODUCT_PACKAGES += \
     GesturalNavigationRadiusVeryLow \
     GesturalNavigationRadiusHidden
 
+# Fonts
+PRODUCT_PACKAGES += \
+    Custom-Fonts
+
 ifeq ($(WITH_FOD_ANIMATIONS),true)
 PRODUCT_PACKAGES += \
     FodAnimationResources
