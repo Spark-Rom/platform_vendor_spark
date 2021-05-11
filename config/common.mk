@@ -44,6 +44,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/spark/prebuilt/common/etc/init.local.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/init.spark.rc
 
+# Font service Permissions
+PRODUCT_COPY_FILES += \
+    vendor/spark/config/permissions/privapp-permissions-spark-system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-spark-system_ext.xml \
+
 ifneq ($(AB_OTA_PARTITIONS),)
 PRODUCT_COPY_FILES += \
     vendor/spark/prebuilt/common/bin/backuptool_ab.sh:system/bin/backuptool_ab.sh \
