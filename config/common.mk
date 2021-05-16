@@ -142,7 +142,7 @@ $(call inherit-product, vendor/spark/config/audio.mk)
 include vendor/spark/config/branding.mk
 
 # Overlays
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/spark/overlay
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/spark/overlay/common
 
 DEVICE_PACKAGE_OVERLAYS += vendor/spark/overlay/common
 
