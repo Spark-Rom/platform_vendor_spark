@@ -67,7 +67,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1 \
     persist.sys.disable_rescue=true \
     ro.opa.eligible_device=true \
-    ro.setupwizard.rotation_locked=true
+    ro.setupwizard.rotation_locked=true \
+    ro.control_privapp_permissions=log
 
 # Disable vendor restrictions
 PRODUCT_RESTRICT_VENDOR_FILES := false
