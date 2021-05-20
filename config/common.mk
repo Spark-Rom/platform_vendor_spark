@@ -176,7 +176,8 @@ PRODUCT_PACKAGES += \
     SwitchTelegram \
     SwitchRetro \
     SwitchMD2 \
-    SwitchOOS
+    SwitchOOS \
+    SwitchFluid
 
 # QS Header size
 PRODUCT_PACKAGES += \
