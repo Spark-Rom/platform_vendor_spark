@@ -18,11 +18,7 @@ PRODUCT_PACKAGES += \
 
 
 ifneq ($(WITH_GAPPS), true)
-ifeq  ($(WITH_OPAPPS), true)
-include vendor/opstuff/config.mk
-else
 include vendor/spark/packages/apps/Lawnchair/lawnchair.mk
-endif
 endif
 
 PRODUCT_PACKAGES += \
