@@ -152,7 +152,8 @@ include packages/overlays/Themes/themes.mk
 # Cutout control overlays
 PRODUCT_PACKAGES += \
     HideCutout \
-    StatusBarStock
+    StatusBarStock \
+    ImmersiveMode
 
 
 # GVM
