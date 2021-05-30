@@ -17,7 +17,7 @@ PRODUCT_PACKAGES += \
     SimpleDeviceConfig
 
 
-ifneq ($(WITH_GAPPS), true)
+ifeq ($(WITH_LAWNCHAIR), true)
 include vendor/spark/packages/apps/Lawnchair/lawnchair.mk
 endif
 
