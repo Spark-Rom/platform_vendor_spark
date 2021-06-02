@@ -13,9 +13,7 @@ PRODUCT_PACKAGES += \
     Flipendo \
     StitchImage \
     StitchImageService \
-    PulseMusic \
     SimpleDeviceConfig
-
 
 ifeq ($(WITH_LAWNCHAIR), true)
 include vendor/spark/packages/apps/Lawnchair/lawnchair.mk
