@@ -9,8 +9,8 @@
         <item name="android:actionBarSize">48.0dip</item>
         <item name="android:strokeColor">#ffdadce0</item>
         <item name="android:colorControlActivated">#ff1967d2</item>
-        <item name="android:colorPrimary">#ff1a73e8</item>
-        <item name="android:colorAccent">#ff1a73e8</item>
+        <item name="android:colorPrimary">#fffcdc33</item>
+        <item name="android:colorAccent">#fffcdc33</item>
         <item name="android:statusBarColor">?android:colorBackground</item>
         <item name="android:navigationBarColor">?android:colorBackground</item>
         <item name="android:windowLightStatusBar">true</item>
