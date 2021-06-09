@@ -59,6 +59,7 @@ PRODUCT_PACKAGES += \
     FontNothingDotHeadlineOverlay \
     FontOneplusSansOverlay \
     FontOneplusSlateOverlay \
+    RobotoFallback-VF.ttf \
     FontOppoSansOverlay \
     FontProductSansVHOverlay \
     FontRobotoCondensedOverlay \
