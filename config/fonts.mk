@@ -44,5 +44,6 @@ PRODUCT_PACKAGES += \
     FontStoropiaSourceOverlay \
     FontSurferSourceOverlay \
     FontUbuntuSourceOverlay \
+    RobotoFallback-VF.ttf \
     FontOppoSansOverlay \
     FontNothiingDotOverlay
