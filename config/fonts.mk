@@ -34,6 +34,7 @@ PRODUCT_PACKAGES += \
     FontNunitoOverlay \
     FontOneplusSansOverlay \
     FontOneplusSlateOverlay \
+    RobotoFallback-VF.ttf \
     FontOppoSansOverlay \
     FontOswaldOverlay \
     FontProductSansVHOverlay \
