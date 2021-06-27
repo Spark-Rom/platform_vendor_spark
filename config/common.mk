@@ -183,7 +183,8 @@ PRODUCT_PACKAGES += \
     SwitchRetro \
     SwitchMD2 \
     SwitchOOS \
-    SwitchFluid
+    SwitchFluid \
+    AndroidS
 
 # QS Header size
 PRODUCT_PACKAGES += \
