@@ -19,6 +19,11 @@ ifeq ($(WITH_LAWNCHAIR), true)
 include vendor/spark/packages/apps/Lawnchair/lawnchair.mk
 endif
 
+ifneq ($(WITH_GAPPS), true)
+PRODUCT_PACKAGES += \
+     ViaBrowser
+endif
+
 PRODUCT_PACKAGES += \
     7z \
     awk \
