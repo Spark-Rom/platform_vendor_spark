@@ -115,7 +115,7 @@ QCOM_HARDWARE_VARIANT := sdm845
 else ifeq ($(call is-board-platform-in-list, $(UM_4_14_FAMILY)),true)
 MSM_VIDC_TARGET_LIST := $(UM_4_14_FAMILY)
 QCOM_HARDWARE_VARIANT := sm8150
-else ifneq ($(filter $(UM_4_19_FAMILY),$(TARGET_BOARD_PLATFORM)),)
+else ifeq ($(call is-board-platform-in-list, $(UM_4_19_FAMILY)),true)
 MSM_VIDC_TARGET_LIST := $(UM_4_19_FAMILY)
 QCOM_HARDWARE_VARIANT := sm8250
 else ifeq ($(call is-board-platform-in-list, $(UM_5_4_FAMILY)),true)
