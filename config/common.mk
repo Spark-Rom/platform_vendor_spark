@@ -275,6 +275,9 @@ PRODUCT_PACKAGES += \
     charger_res_images \
     product_charger_res_images
 
+# Inherit from fonts config
+$(call inherit-product, vendor/spark/config/fonts.mk)
+
 # Plugins
 include packages/apps/Plugins/plugins.mk
 

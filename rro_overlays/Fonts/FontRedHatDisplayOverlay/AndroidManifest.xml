@@ -1,0 +1,13 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.theme.font.redhatdisplay"
+    android:versionCode="1"
+    android:versionName="1.0">
+    <overlay android:targetPackage="android"
+        android:category="android.theme.customization.font"
+        android:priority="1"/>
+    <application android:label="@string/font_red_hat_display_overlay" android:hasCode="false">
+        <meta-data
+            android:name="android.theme.customization.REQUIRED_SYSTEM_FONTS"
+            android:value="red-hat-display,red-hat-display-medium" />
+    </application>
+</manifest>

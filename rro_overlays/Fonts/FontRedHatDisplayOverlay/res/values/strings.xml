@@ -1,0 +1,4 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Headline / Body font Red Hat Display / Red Hat Display overlay -->
+    <string name="font_red_hat_display_overlay" translatable="false">Red Hat Display / Red Hat Display</string>
+</resources>
