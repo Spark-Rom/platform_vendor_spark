@@ -255,15 +255,15 @@ PRODUCT_PACKAGES += \
     GesturalNavigationRadiusLow \
     GesturalNavigationRadiusVeryLow \
     GesturalNavigationRadiusHidden \
+    AndroidNavbarOverlay \
     AsusNavbarOverlay \
-    OnePlusNavbarOverlay \
-    OneUiNavbarOverlay \
-    TecnoCamonNavbarOverlay \
     MotoNavbarOverlay \
     NexusNavbarOverlay \
     OldNavbarOverlay \
-    AndroidNavbarOverlay \
-    SammyNavbarOverlay
+    OnePlusNavbarOverlay \
+    OneUiNavbarOverlay \
+    SammyNavbarOverlay \
+    TecnoCamonNavbarOverlay
 
 ifeq ($(WITH_FOD_ANIMATIONS),true)
 PRODUCT_PACKAGES += \
