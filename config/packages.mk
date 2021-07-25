@@ -6,6 +6,7 @@ PRODUCT_PACKAGES += \
 
 # Required packages
 PRODUCT_PACKAGES += \
+    Launcher3 \
     ThemePicker \
     SparkThemesStub \
     QuickAccessWallet \
