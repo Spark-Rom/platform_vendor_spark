@@ -162,8 +162,6 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/spark/overlay/common
 
 DEVICE_PACKAGE_OVERLAYS += vendor/spark/overlay/common
 
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += vendor/spark/config/device_framework_matrix.xml
-
 include packages/overlays/Themes/themes.mk
 
 # Cutout control overlays
