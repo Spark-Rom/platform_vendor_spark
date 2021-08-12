@@ -25,7 +25,12 @@ endif
 
 ifneq ($(WITH_GAPPS), true)
 PRODUCT_PACKAGES += \
-     ViaBrowser
+     ViaBrowser \
+     Turbo
+
+PRODUCT_COPY_FILES += \
+    vendor/spark/prebuilt/common/etc/permissions/privapp-permissions-turbo.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-turbo.xml \
+    vendor/spark/prebuilt/common/etc/turbo.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/turbo.xml
 endif
 
 PRODUCT_PACKAGES += \
