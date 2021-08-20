@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (C) 2020-2021 The Project-Xtended
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/fod_recog_animation_redwave_00" android:duration="6" />
+    <item android:drawable="@drawable/fod_recog_animation_redwave_01" android:duration="6" />
+    <item android:drawable="@drawable/fod_recog_animation_redwave_02" android:duration="6" />
+    <item android:drawable="@drawable/fod_recog_animation_redwave_03" android:duration="6" />
+    <item android:drawable="@drawable/fod_recog_animation_redwave_04" android:duration="6" />
+    <item android:drawable="@drawable/fod_recog_animation_redwave_05" android:duration="6" />
+    <item android:drawable="@drawable/fod_recog_animation_redwave_06" android:duration="6" />
+    <item android:drawable="@drawable/fod_recog_animation_redwave_07" android:duration="6" />
+    <item android:drawable="@drawable/fod_recog_animation_redwave_08" android:duration="6" />
+    <item android:drawable="@drawable/fod_recog_animation_redwave_09" android:duration="6" />
+    <item android:drawable="@drawable/fod_recog_animation_redwave_10" android:duration="6" />
+    <item android:drawable="@drawable/fod_recog_animation_redwave_11" android:duration="6" />
+    <item android:drawable="@drawable/fod_recog_animation_redwave_12" android:duration="6" />
+    <item android:drawable="@drawable/fod_recog_animation_redwave_13" android:duration="6" />
+    <item android:drawable="@drawable/fod_recog_animation_redwave_14" android:duration="6" />
+    <item android:drawable="@drawable/fod_recog_animation_redwave_15" android:duration="6" />
+    <item android:drawable="@drawable/fod_recog_animation_redwave_16" android:duration="6" />
+    <item android:drawable="@drawable/fod_recog_animation_redwave_17" android:duration="6" />
+    <item android:drawable="@drawable/fod_recog_animation_redwave_18" android:duration="6" />
+    <item android:drawable="@drawable/fod_recog_animation_redwave_19" android:duration="6" />
+    <item android:drawable="@drawable/fod_recog_animation_redwave_20" android:duration="6" />
+    <item android:drawable="@drawable/fod_recog_animation_redwave_21" android:duration="6" />
+    <item android:drawable="@drawable/fod_recog_animation_redwave_22" android:duration="6" />
+    <item android:drawable="@drawable/fod_recog_animation_redwave_23" android:duration="6" />
+    <item android:drawable="@drawable/fod_recog_animation_redwave_24" android:duration="6" />
+    <item android:drawable="@drawable/fod_recog_animation_redwave_25" android:duration="6" />
+    <item android:drawable="@drawable/fod_recog_animation_redwave_26" android:duration="6" />
+    <item android:drawable="@drawable/fod_recog_animation_redwave_27" android:duration="6" />
+    <item android:drawable="@drawable/fod_recog_animation_redwave_28" android:duration="6" />
+    <item android:drawable="@drawable/fod_recog_animation_redwave_29" android:duration="6" />
+    <item android:drawable="@drawable/fod_recog_animation_redwave_30" android:duration="6" />
+    <item android:drawable="@drawable/fod_recog_animation_redwave_31" android:duration="6" />
+    <item android:drawable="@drawable/fod_recog_animation_redwave_32" android:duration="6" />
+    <item android:drawable="@drawable/fod_recog_animation_redwave_33" android:duration="6" />
+    <item android:drawable="@drawable/fod_recog_animation_redwave_34" android:duration="6" />
+    <item android:drawable="@drawable/fod_recog_animation_redwave_35" android:duration="6" />
+    <item android:drawable="@drawable/fod_recog_animation_redwave_36" android:duration="6" />
+    <item android:drawable="@drawable/fod_recog_animation_redwave_37" android:duration="6" />
+    <item android:drawable="@drawable/fod_recog_animation_redwave_38" android:duration="6" />
+    <item android:drawable="@drawable/fod_recog_animation_redwave_39" android:duration="6" />
+    <item android:drawable="@drawable/fod_recog_animation_redwave_40" android:duration="6" />
+    <item android:drawable="@drawable/fod_recog_animation_redwave_41" android:duration="6" />
+    <item android:drawable="@drawable/fod_recog_animation_redwave_42" android:duration="6" />
+    <item android:drawable="@drawable/fod_recog_animation_redwave_43" android:duration="6" />
+    <item android:drawable="@drawable/fod_recog_animation_redwave_44" android:duration="6" />
+    <item android:drawable="@drawable/fod_recog_animation_redwave_45" android:duration="6" />
+    <item android:drawable="@drawable/fod_recog_animation_redwave_46" android:duration="6" />
+    <item android:drawable="@drawable/fod_recog_animation_redwave_47" android:duration="6" />
+    <item android:drawable="@drawable/fod_recog_animation_redwave_48" android:duration="6" />
+    <item android:drawable="@drawable/fod_recog_animation_redwave_49" android:duration="6" />
+    <item android:drawable="@drawable/fod_recog_animation_redwave_50" android:duration="6" />
+    <item android:drawable="@drawable/fod_recog_animation_redwave_51" android:duration="6" />
+</animation-list>
+
