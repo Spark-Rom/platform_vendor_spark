@@ -116,5 +116,26 @@
     </family>
     <alias name="red-hat-display-medium" to="red-hat-display" weight="500" />
 
-</fonts-modification>
+    <family customizationType="new-named-family" name="samsung-one">
+       <font weight="100" style="normal">SamsungOne-Thin.ttf</font>
+       <font weight="100" style="italic">SamsungOne-ThinItalic.ttf</font>
+       <font weight="300" style="normal">SamsungOne-Light.ttf</font>
+       <font weight="300" style="italic">SamsungOne-LightItalic.ttf</font>
+       <font weight="400" style="normal">SamsungOne-Regular.ttf</font>
+       <font weight="400" style="italic">SamsungOne-Italic.ttf</font>
+       <font weight="500" style="normal">SamsungOne-Medium.ttf</font>
+       <font weight="500" style="italic">SamsungOne-MediumItalic.ttf</font>
+       <font weight="900" style="normal">SamsungOne-Black.ttf</font>
+       <font weight="900" style="italic">SamsungOne-BlackItalic.ttf</font>
+       <font weight="700" style="normal">SamsungOne-Bold.ttf</font>
+       <font weight="700" style="italic">SamsungOne-BoldItalic.ttf</font>
+    </family>
+    <alias name="samsung-one-thin" to="samsung-one" weight="100" />
+    <alias name="samsung-one-light" to="samsung-one" weight="300" />
+    <alias name="samsung-one-book" to="samsung-one" weight="400" />
+    <alias name="samsung-one-regular" to="samsung-one" weight="400" />
+    <alias name="samsung-one-medium" to="samsung-one" weight="500" />
+    <alias name="samsung-one-bold" to="samsung-one" weight="700" />
+    <alias name="samsung-one-black" to="samsung-one" weight="900" />
 
+</fonts-modification>

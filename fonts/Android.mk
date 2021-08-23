@@ -90,7 +90,19 @@ font_src_files := \
     RedHatDisplay-Italic.ttf \
     RedHatDisplay-MediumItalic.ttf \
     RedHatDisplay-Medium.ttf \
-    RedHatDisplay-Regular.ttf
+    RedHatDisplay-Regular.ttf \
+    SamsungOne-Thin.ttf \
+    SamsungOne-ThinItalic.ttf \
+    SamsungOne-Light.ttf \
+    SamsungOne-LightItalic.ttf \
+    SamsungOne-Regular.ttf \
+    SamsungOne-Italic.ttf \
+    SamsungOne-Medium.ttf \
+    SamsungOne-MediumItalic.ttf \
+    SamsungOne-Black.ttf \
+    SamsungOne-BlackItalic.ttf \
+    SamsungOne-Bold.ttf \
+    SamsungOne-BoldItalic.ttf
 
 $(foreach f, $(font_src_files), $(call build-one-font-module, $(f)))
 
