@@ -19,7 +19,7 @@
           package="com.android.theme.navbar.android"
           android:versionCode="1"
           android:versionName="1.0">
-    <overlay android:targetPackage="com.android.systemui" android:category="android.theme.customization.accent_color" android:priority="1"/>
+    <overlay android:targetPackage="com.android.systemui" android:category="android.theme.customization.navbar" android:priority="1"/>
 
     <application android:label="AndroidNavbar" android:hasCode="false"/>
 </manifest>
