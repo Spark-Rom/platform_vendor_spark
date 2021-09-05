@@ -17,7 +17,8 @@ PRODUCT_PACKAGES += \
     StitchImageService \
     SimpleDeviceConfig \
     SoundPickerPrebuilt \
-    OmniJaws
+    OmniJaws \
+    GamingMode
 
 ifeq ($(WITH_LAWNCHAIR), true)
 include vendor/spark/packages/apps/Lawnchair/lawnchair.mk
