@@ -154,6 +154,10 @@ PRODUCT_PACKAGES += \
 # Inherit from audio config
 $(call inherit-product, vendor/spark/config/audio.mk)
 
+# Font config template
+PRODUCT_COPY_FILES += \
+    vendor/spark/prebuilts/etc/custom_font_config.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/custom_font_config.xml
+
 # Branding
 include vendor/spark/config/branding.mk
 
