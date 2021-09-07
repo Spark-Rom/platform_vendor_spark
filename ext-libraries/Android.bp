@@ -1,0 +1,4 @@
+java_import {
+    name: "org.apache.pdfbox_fontbox",
+    jars: ["org.apache.pdfbox/fontbox-2.0.24.jar"],
+}
