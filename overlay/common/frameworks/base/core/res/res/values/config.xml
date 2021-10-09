@@ -165,6 +165,8 @@
     <!-- Whether this device is supporting the camera toggle -->
     <bool name="config_supportsCamToggle">true</bool>
 
+    <!-- Face detection for screen auto rotation -->
+    <string name="config_defaultRotationResolverService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiRotationResolverService</string>
 
     <!-- Wallpaper cropper package. Used as the default cropper if the active launcher doesn't
          handle wallpaper cropping.
