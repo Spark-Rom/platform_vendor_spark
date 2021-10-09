@@ -77,6 +77,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.control_privapp_permissions=log
 
+# Gapps
+$(call inherit-product, vendor/spark/config/gapps.mk)
+
 # Include AOSP audio files
 #include vendor/spark/config/aosp_audio.mk
 
@@ -125,11 +128,6 @@ include vendor/spark/config/version.mk
 
 # Packages
 include vendor/spark/config/packages.mk
-
-ifeq ($(WITH_GAPPS), true)
-# GApps
-include vendor/gms/products/gms.mk
-endif
 
 # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED ?= true
