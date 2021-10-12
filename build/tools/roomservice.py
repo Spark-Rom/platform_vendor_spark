@@ -45,7 +45,7 @@ except ImportError:
 DEBUG = False
 
 custom_local_manifest = ".repo/local_manifests/spark_manifest.xml"
-custom_default_revision = "fire"
+custom_default_revision = "spark"
 custom_dependencies = "spark.dependencies"
 org_manifest = "devices"  # leave empty if org is provided in manifest
 org_display = "Spark-Devices"  # needed for displaying
