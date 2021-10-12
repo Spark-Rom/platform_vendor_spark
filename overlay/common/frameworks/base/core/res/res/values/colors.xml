@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) Project Fluid
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+
+    <color name="system_accent1_0">#FFFFFF</color>
+    <color name="system_accent1_10">#FAFCFE</color>
+    <color name="system_accent1_50">#E8EFFC</color>
+    <color name="system_accent1_100">#D1DFFA</color>
+    <color name="system_accent1_200">#A3BEF5</color>
+    <color name="system_accent1_300">#759EF0</color>
+    <color name="system_accent1_400">#477EEB</color>
+    <color name="system_accent1_500">#2D64D2</color>
+    <color name="system_accent1_600">#144BB8</color>
+    <color name="system_accent1_700">#0F388A</color>
+    <color name="system_accent1_800">#0A255C</color>
+    <color name="system_accent1_900">#05132E</color>
+    <color name="system_accent1_1000">#000000</color>
+
+    <color name="system_accent2_0">#FFFFFF</color>
+    <color name="system_accent2_10">#FCFCFD</color>
+    <color name="system_accent2_50">#F0F1F5</color>
+    <color name="system_accent2_100">#E1E4EA</color>
+    <color name="system_accent2_200">#C3C9D5</color>
+    <color name="system_accent2_300">#A5AEC0</color>
+    <color name="system_accent2_400">#8793AB</color>
+    <color name="system_accent2_500">#697896</color>
+    <color name="system_accent2_600">#546078</color>
+    <color name="system_accent2_700">#3F485A</color>
+    <color name="system_accent2_800">#2A303C</color>
+    <color name="system_accent2_900">#15181E</color>
+    <color name="system_accent2_1000">#000000</color>
+
+    <color name="system_accent3_0">#FFFFFF</color>
+    <color name="system_accent3_10">#FBFDFE</color>
+    <color name="system_accent3_50">#EDF5F8</color>
+    <color name="system_accent3_100">#DBEBF0</color>
+    <color name="system_accent3_200">#B6D7E2</color>
+    <color name="system_accent3_300">#92C3D3</color>
+    <color name="system_accent3_400">#6DAFC5</color>
+    <color name="system_accent3_500">#499BB6</color>
+    <color name="system_accent3_600">#3A7C92</color>
+    <color name="system_accent3_700">#2C5D6D</color>
+    <color name="system_accent3_800">#1D3E49</color>
+    <color name="system_accent3_900">#0F1F24</color>
+    <color name="system_accent3_1000">#000000</color>
+
+    <color name="system_neutral1_0">#FFFFFF</color>
+    <color name="system_neutral1_10">#FCFCFD</color>
+    <color name="system_neutral1_50">#F1F2F3</color>
+    <color name="system_neutral1_100">#E3E5E8</color>
+    <color name="system_neutral1_200">#C8CBD0</color>
+    <color name="system_neutral1_300">#ACB0B9</color>
+    <color name="system_neutral1_400">#9196A1</color>
+    <color name="system_neutral1_500">#717784</color>
+    <color name="system_neutral1_600">#575C66</color>
+    <color name="system_neutral1_700">#3B3E45</color>
+    <color name="system_neutral1_800">#212327</color>
+    <color name="system_neutral1_900">#191B1F</color>
+    <color name="system_neutral1_1000">#000000</color>
+
+    <color name="system_neutral2_0">#FFFFFF</color>
+    <color name="system_neutral2_10">#FCFDFD</color>
+    <color name="system_neutral2_50">#F1F3F3</color>
+    <color name="system_neutral2_100">#E3E7E8</color>
+    <color name="system_neutral2_200">#C8CED0</color>
+    <color name="system_neutral2_300">#ACB6B9</color>
+    <color name="system_neutral2_400">#919DA1</color>
+    <color name="system_neutral2_500">#717F84</color>
+    <color name="system_neutral2_600">#576266</color>
+    <color name="system_neutral2_700">#3B4245</color>
+    <color name="system_neutral2_800">#212527</color>
+    <color name="system_neutral2_900">#191E1F</color>
+    <color name="system_neutral2_1000">#000000</color>
+
+</resources>
