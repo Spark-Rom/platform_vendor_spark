@@ -39,31 +39,3 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     rsync
 
-# Gesture Overlays
-PRODUCT_PACKAGES += \
-    GesturalNavigationOverlayLong \
-    GesturalNavigationOverlayMedium \
-    GesturalNavigationOverlayHidden
-
-# Primary Themes
-PRODUCT_PACKAGES += \
-    SystemPitchBlackOverlay \
-    SystemUIPitchBlackOverlay \
-    SystemDarkGrayOverlay \
-    SystemUIDarkGrayOverlay \
-    SystemStyleOverlay \
-    SystemUIStyleOverlay \
-    SystemNightOverlay \
-    SystemUINightOverlay \
-    SystemSolarizedDarkOverlay \
-    SystemUISolarizedDarkOverlay
-
-# Accents
-PRODUCT_PACKAGES += \
-    AccentColorOPRedOverlay \
-    AccentColorPixelBlueOverlay
-
-# Notch city
-PRODUCT_PACKAGES += \
-    HideCutout \
-    StatusBarStock
