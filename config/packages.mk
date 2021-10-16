@@ -4,8 +4,7 @@ PRODUCT_PACKAGES += \
     QuickAccessWallet \
     StitchImage \
     wellbeingconf \
-    googleconf \
-    TurboPrebuilt
+    googleconf
 
 
 # Extra tools in Spark
