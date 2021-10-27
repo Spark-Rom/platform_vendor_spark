@@ -6,6 +6,11 @@ PRODUCT_PACKAGES += \
     wellbeingconf \
     googleconf
 
+ifneq ($(TARGET_NO_PREBUILT_CAMERA),true)
+PRODUCT_PACKAGES += \
+    Camera
+endif
+
 
 # Extra tools in Spark
 PRODUCT_PACKAGES += \
