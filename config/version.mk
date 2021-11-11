@@ -14,8 +14,8 @@
 # limitations under the License.
 
 # Versioning System
-SPARK_CODENAME := Ember
-SPARK_NUM_VER := 2.0
+SPARK_CODENAME := Storm
+SPARK_NUM_VER := S
 
 TARGET_PRODUCT_SHORT := $(subst spark_,,$(SPARK_BUILD_TYPE))
 
