@@ -2,7 +2,6 @@
 PRODUCT_PACKAGES += \
     ThemePicker \
     QuickAccessWallet \
-    StitchImage \
     wellbeingconf \
     googleconf
 
