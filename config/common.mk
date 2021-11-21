@@ -84,9 +84,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # Fonts
 include vendor/spark/config/fonts.mk
 
-# Gapps
-$(call inherit-product, vendor/spark/config/gapps.mk)
-
 # Include AOSP audio files
 #include vendor/spark/config/aosp_audio.mk
 
@@ -139,6 +136,11 @@ include vendor/spark/config/packages.mk
 TARGET_BUILD_LAWNCHAIR ?= true
 ifeq ($(strip $(TARGET_BUILD_LAWNCHAIR)),true)
 include vendor/lawnchair/lawnchair.mk
+endif
+
+ifeq ($(WITH_GAPPS), true)
+# GApps
+include vendor/gms/products/gms.mk
 endif
 
 # Face Unlock
