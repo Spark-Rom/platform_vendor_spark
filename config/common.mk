@@ -143,6 +143,11 @@ ifeq ($(WITH_GAPPS), true)
 include vendor/gms/products/gms.mk
 endif
 
+
+# RRO Overlays
+PRODUCT_PACKAGES += \
+    NavigationBarModeGesturalOverlayFS
+
 # Face Unlock
 #TARGET_FACE_UNLOCK_SUPPORTED ?= true
 #ifeq ($(TARGET_FACE_UNLOCK_SUPPORTED),true)
