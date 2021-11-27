@@ -106,8 +106,10 @@ TARGET_SCREEN_WIDTH ?= 1080
 TARGET_SCREEN_HEIGHT ?= 1920
 
 # Charger
+ifeq ($(USE_PIXEL_CHARGER),true)
 PRODUCT_PACKAGES += \
     product_charger_res_images
+endif
 
 # Storage manager
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
