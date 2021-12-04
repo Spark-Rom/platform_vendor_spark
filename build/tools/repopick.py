@@ -71,7 +71,7 @@ def fetch_query_via_ssh(remote_url, query):
     elif remote_url.count(':') == 1:
         (uri, userhost) = remote_url.split(':')
         userhost = userhost[2:]
-        port = 29418
+        port = 29458
     else:
         raise Exception('Malformed URI: Expecting ssh://[user@]host[:port]')
 
