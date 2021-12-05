@@ -33,7 +33,7 @@ otapackage: $(INTERNAL_OTA_PACKAGE_TARGET)
 spark: otapackage
 	$(hide) ln -f $(INTERNAL_OTA_PACKAGE_TARGET) $(SPARK_TARGET_PACKAGE)
 	$(hide) $(SHA256) $(SPARK_TARGET_PACKAGE) | sed "s|$(PRODUCT_OUT)/||" > $(SPARK_TARGET_PACKAGE).sha256sum
-	$(hide) ./vendor/spark/tools/generate_json.sh $(SPARK_TARGET_PACKAGE)
+	$(hide) ./vendor/spark/build/tools/generate_json.sh $(SPARK_TARGET_PACKAGE)
 	@echo -e ""
 	@echo -e "${cya}Building ${bldcya}Spark! ${txtrst}";
 	@echo -e ""

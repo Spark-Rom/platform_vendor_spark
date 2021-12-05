@@ -1,7 +1,4 @@
 #!/bin/bash
-
-generate_json {
-
 if [ "$1" ]; then
     file_path=$1
     file_name=$(basename "$file_path")
@@ -32,5 +29,3 @@ if [ "$1" ]; then
         mv "${file_path}.json" "./${device_name}_${variant_lower}.json"
     fi
 fi
-
-}
