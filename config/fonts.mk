@@ -40,6 +40,7 @@ PRODUCT_PACKAGES += \
 
 # Fonts
 PRODUCT_PACKAGES += \
+    FontCustomOverlay \
     FontAccuratistOverlay \
     FontBariolOverlay \
     FontCoconOverlay \
