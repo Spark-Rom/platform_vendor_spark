@@ -11,4 +11,5 @@ PRODUCT_PACKAGES += \
     FontManropeOverlay \
     FontOnePlusSansOverlay \
     FontOneplusSlateSourceOverlay \
-    FontOneUISansOverlay
+    FontOneUISansOverlay \
+    FontCustomOverlay
