@@ -14,7 +14,7 @@
 # limitations under the License.
 
 # Versioning System
-SPARK_CODENAME := Storm
+SPARK_CODENAME := Tempest
 SPARK_NUM_VER := S
 
 TARGET_PRODUCT_SHORT := $(subst spark_,,$(SPARK_BUILD_TYPE))
