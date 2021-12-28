@@ -194,7 +194,7 @@ PRODUCT_PACKAGES += \
 #endif
 
 # Udfps
-#ifeq ($(EXTRA_UDFPS_ANIMATIONS),true)
-#PRODUCT_PACKAGES += \
-#    UdfpsAnimationResources
-#endif
+ifeq ($(EXTRA_UDFPS_ANIMATIONS),true)
+PRODUCT_PACKAGES += \
+    UdfpsResources
+endif
