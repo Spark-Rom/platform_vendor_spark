@@ -198,3 +198,7 @@ ifeq ($(EXTRA_UDFPS_ANIMATIONS),true)
 PRODUCT_PACKAGES += \
     UdfpsResources
 endif
+
+# GamingMode
+PRODUCT_PACKAGES += \
+    GamingMode
