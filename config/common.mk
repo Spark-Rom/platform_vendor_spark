@@ -271,6 +271,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     hosts.spark_adblock
 
+# Custom Themes
+PRODUCT_PACKAGES += \
+    AndroidBlackThemeOverlay
+
 # Adaptive Charging
 ifeq ($(TARGET_SUPPORTS_ADAPTIVE_CHARGING),true)
 PRODUCT_COPY_FILES += \
