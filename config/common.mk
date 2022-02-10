@@ -214,8 +214,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     XtendedClearSystemOverlay \
     XtendedClearSystemUIOverlay \
-    PitchBlackSystemOverlay \
-    PitchBlackSystemUIOverlay \
     SolarizedDarkSystemOverlay \
     SolarizedDarkSystemUIOverlay \
     BakedGreenSystemOverlay \
