@@ -14,8 +14,8 @@
 # limitations under the License.
 
 # Versioning System
-SPARK_CODENAME := Energized
-SPARK_NUM_VER := S
+SPARK_NUM_VER_PRIMARY := 12
+SPARK_NUM_VER_SECONDARY := 0
 
 TARGET_PRODUCT_SHORT := $(subst spark_,,$(SPARK_BUILD_TYPE))
 
@@ -35,7 +35,7 @@ endif
 # Set all versions
 BUILD_DATE := $(shell date -u +%Y%m%d)
 BUILD_TIME := $(shell date -u +%H%M)
-SPARK_BUILD_VERSION := $(SPARK_NUM_VER)-$(SPARK_CODENAME)
+SPARK_BUILD_VERSION := $(SPARK_NUM_VER_PRIMARY).$(SPARK_NUM_VER_SECONDARY)
 SPARK_VERSION := $(SPARK_BUILD_VERSION)-$(SPARK_BUILD_TYPE)-$(SPARK_BUILD)-$(BUILD_DATE)
 ifeq ($(WITH_GAPPS), true)
 SPARK_VERSION := $(SPARK_VERSION)-gapps
