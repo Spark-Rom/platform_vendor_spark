@@ -4,7 +4,7 @@ if [ "$1" ]; then
     file_name=$(basename "$file_path")
     echo "Generating .json"
     if [ -f $file_path ]; then
-        device_name=$(echo $file_name | cut -d'-' -f5);
+        device_name=$(echo $file_name | cut -d'-' -f4);
         build_prop="out/target/product/${device_name}/system/build.prop";
         name=$(grep ro\.spark\.device\.name ${build_prop} | cut -d= -f2);
         codename=$(grep ro\.spark\.device\= ${build_prop} | cut -d= -f2);
