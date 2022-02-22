@@ -224,3 +224,6 @@ PRODUCT_PACKAGES += \
     MaterialOceanSystemUIOverlay \
     DarkGreySystemOverlay \
     DarkGreySystemUIOverlay
+
+PRODUCT_PACKAGES += \
+    hosts.spark_adblock
