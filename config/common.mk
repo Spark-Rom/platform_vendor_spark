@@ -2,6 +2,7 @@
 $(call inherit-product-if-exists, vendor/extra/product.mk)
 $(call inherit-product, vendor/spark/config/bootanimation.mk)
 $(call inherit-product, vendor/addons/config.mk)
+$(call inherit-product, vendor/pixel-framework/config.mk)
 
 PRODUCT_BRAND ?= Spark
 
@@ -193,7 +194,8 @@ PRODUCT_PACKAGES += \
 
 # SystemUI
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    SystemUI
+    SettingsGoogle \
+    SystemUIGoogle
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     dalvik.vm.systemuicompilerfilter=speed
@@ -236,6 +238,25 @@ TARGET_INCLUDE_LIVE_WALLPAPERS ?= true
 # AdBlock
 PRODUCT_PACKAGES += \
     hosts.spark_adblock
+
+TARGET_SUPPORTS_QUICK_TAP ?= true
+# Quick Tap
+ifeq ($(TARGET_SUPPORTS_QUICK_TAP),true)
+PRODUCT_COPY_FILES += \
+    vendor/spark/prebuilt/common/etc/sysconfig/quick_tap.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/quick_tap.xml
+endif
+
+# Adaptive Charging
+ifeq ($(TARGET_SUPPORTS_ADAPTIVE_CHARGING),true)
+PRODUCT_COPY_FILES += \
+    vendor/spark/prebuilt/common/etc/sysconfig/adaptivecharging.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/adaptivecharging.xml
+endif
+
+# DreamLiner
+ifeq ($(TARGET_SUPPORTS_ADAPTIVE_CHARGING),true)
+PRODUCT_COPY_FILES += \
+    vendor/spark/prebuilt/common/etc/sysconfig/dreamliner.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/dreamliner.xml
+endif
 
 include vendor/spark/config/version.mk
 
