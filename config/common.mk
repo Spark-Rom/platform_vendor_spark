@@ -212,6 +212,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_EXTRA_RECOVERY_KEYS += \
     vendor/spark/build/target/product/security/spark
 
+# AdBlock
+PRODUCT_PACKAGES += \
+    hosts.spark_adblock
+
 include vendor/spark/config/version.mk
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
