@@ -217,6 +217,10 @@ PRODUCT_EXTRA_RECOVERY_KEYS += \
 PRODUCT_PACKAGES += \
     SettingsIntelligenceGooglePrebuilt
 
+# AdBlock
+PRODUCT_PACKAGES += \
+    hosts.spark_adblock
+
 # Additional props
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.error.receiver.system.apps=com.google.android.gms \
