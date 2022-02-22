@@ -227,3 +227,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     hosts.spark_adblock
+
+# Quick Tap
+ifeq ($(TARGET_SUPPORTS_QUICK_TAP),true)
+PRODUCT_COPY_FILES += \
+    vendor/spark/prebuilt/common/etc/sysconfig/quick_tap.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/quick_tap.xml
+endif
+
