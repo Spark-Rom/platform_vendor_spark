@@ -13,7 +13,7 @@ if [ "$1" ]; then
         maintainer_username=$(grep ro\.spark\.maintainer\.username ${build_prop} | cut -d= -f2);
         size=$(stat -c%s $file_path);
         id=$(sha256sum $file_path | awk '{ print $1 }');
-        url="https://downloads.spark-os.live/${device_name}/";
+	url="https://downloads.spark-os.live/?dir=${device_name}/";
         group=$(grep ro\.spark\.group\.url ${build_prop} | cut -d= -f2);
         echo "{" > $file_path.json
         echo "  \"name\":\"${name}\"," >> $file_path.json
