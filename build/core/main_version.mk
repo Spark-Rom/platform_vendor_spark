@@ -13,3 +13,7 @@ ADDITIONAL_SYSTEM_PROPERTIES += \
     ro.spark.fingerprint=$(ROM_FINGERPRINT) \
     ro.spark.version=$(SPARK_VERSION) \
     ro.modversion=$(SPARK_VERSION)
+
+# SparkOS Android 12L Specific Props
+ADDITIONAL_SYSTEM_PROPERTIES += \
+    ro.spark.settings.android_version=12L
