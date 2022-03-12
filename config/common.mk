@@ -218,7 +218,9 @@ PRODUCT_PACKAGES += \
     OdinSignalOverlay \
     PillsSignalOverlay \
     RomanSignalOverlay \
-    WeedWiFiOverlay
+    WeedWiFiOverlay \
+    DoraSignalOverlay \
+    DoraWiFiOverlay
 
 # Navbar styles
 PRODUCT_PACKAGES += \
