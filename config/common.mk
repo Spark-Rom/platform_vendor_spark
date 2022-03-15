@@ -160,7 +160,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    SystemUI
+    SystemUI \
+    Settings
 
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/spark/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/spark/overlay/common
@@ -174,7 +175,7 @@ include vendor/spark/config/version.mk
 # Packages
 include vendor/spark/config/packages.mk
 
-TARGET_BUILD_LAWNCHAIR ?= true
+TARGET_BUILD_LAWNCHAIR ?= false
 ifeq ($(strip $(TARGET_BUILD_LAWNCHAIR)),true)
 include vendor/lawnchair/lawnchair.mk
 endif
@@ -209,28 +210,16 @@ endif
 PRODUCT_PACKAGES += \
     GamingMode
 
-# Themes
-PRODUCT_PACKAGES += \
-    AndroidBlackThemeOverlay \
-    XtendedClearSystemOverlay \
-    XtendedClearSystemUIOverlay \
-    SolarizedDarkSystemOverlay \
-    SolarizedDarkSystemUIOverlay \
-    BakedGreenSystemOverlay \
-    BakedGreenSystemUIOverlay \
-    ChocoXSystemOverlay \
-    ChocoXSystemUIOverlay \
-    MaterialOceanSystemOverlay \
-    MaterialOceanSystemUIOverlay \
-    DarkGreySystemOverlay \
-    DarkGreySystemUIOverlay
-
 PRODUCT_PACKAGES += \
     hosts.spark_adblock
 
+# Themes
+PRODUCT_PACKAGES += \
+    AndroidBlackThemeOverlay
+
 # Quick Tap
-ifeq ($(TARGET_SUPPORTS_QUICK_TAP),true)
-PRODUCT_COPY_FILES += \
-    vendor/spark/prebuilt/common/etc/sysconfig/quick_tap.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/quick_tap.xml
-endif
+#ifeq ($(TARGET_SUPPORTS_QUICK_TAP),true)
+#PRODUCT_COPY_FILES += \
+#    vendor/spark/prebuilt/common/etc/sysconfig/quick_tap.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/quick_tap.xml
+#endif
 
