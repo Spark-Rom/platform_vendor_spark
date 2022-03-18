@@ -36,6 +36,7 @@ SOONG_CONFIG_sparkGlobalVars += \
     ignores_ftp_pptp_conntrack_failure \
     needs_netd_direct_connect_rule \
     camera_needs_client_info \
+    target_inputdispatcher_skip_event_key \
     target_init_vendor_lib \
     target_ld_shim_libs \
     target_process_sdk_version_override \
@@ -74,6 +75,7 @@ SOONG_CONFIG_sparkGlobalVars_has_legacy_camera_hal1 := $(TARGET_HAS_LEGACY_CAMER
 SOONG_CONFIG_sparkGlobalVars_ignores_ftp_pptp_conntrack_failure := $(TARGET_IGNORES_FTP_PPTP_CONNTRACK_FAILURE)
 SOONG_CONFIG_sparkGlobalVars_needs_netd_direct_connect_rule := $(TARGET_NEEDS_NETD_DIRECT_CONNECT_RULE)
 SOONG_CONFIG_sparkGlobalVars_camera_needs_client_info := $(TARGET_CAMERA_NEEDS_CLIENT_INFO)
+SOONG_CONFIG_sparkGlobalVars_target_inputdispatcher_skip_event_key := $(TARGET_INPUTDISPATCHER_SKIP_EVENT_KEY)
 SOONG_CONFIG_sparkGlobalVars_has_memfd_backport := $(TARGET_HAS_MEMFD_BACKPORT)
 SOONG_CONFIG_sparkNvidiaVars_uses_nv_enhancements := $(NV_ANDROID_FRAMEWORK_ENHANCEMENTS)
 SOONG_CONFIG_sparkQcomVars_legacy_hw_disk_encryption := $(TARGET_LEGACY_HW_DISK_ENCRYPTION)
@@ -94,6 +96,7 @@ TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS ?= 0
 TARGET_INIT_VENDOR_LIB ?= vendor_init
 TARGET_SPECIFIC_CAMERA_PARAMETER_LIBRARY ?= libcamera_parameters
 TARGET_SURFACEFLINGER_UDFPS_LIB ?= surfaceflinger_udfps_lib
+TARGET_INPUTDISPATCHER_SKIP_EVENT_KEY ?= 0
 
 # Soong value variables
 SOONG_CONFIG_sparkGlobalVars_additional_gralloc_10_usage_bits := $(TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS)
