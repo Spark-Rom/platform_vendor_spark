@@ -25,9 +25,11 @@ endif
 ifeq ($(TARGET_BUILD_VARIANT),eng)
 # Disable ADB authentication
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.adb.secure=0
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += persist.sys.usb.config=adb
 else
 # Enable ADB authentication
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.adb.secure=1
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += persist.sys.usb.config=none
 
 # Disable extra StrictMode features on all non-engineering builds
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += persist.sys.strictmode.disable=true
@@ -66,9 +68,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.support_one_handed_mode=true
 
+ifneq ($(WITH_GAPPS), true)
 # Enable gestural navigation overlay to match default navigation mode
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural
+endif
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
@@ -140,20 +144,6 @@ PRODUCT_PACKAGES_DEBUG += \
 PRODUCT_PACKAGES += \
     adb_root
 
-# SetupWizard configuration
-PRODUCT_PRODUCT_PROPERTIES += \
-    setupwizard.feature.baseline_setupwizard_enabled=true \
-    ro.setupwizard.enterprise_mode=1 \
-    ro.setupwizard.rotation_locked=true \
-    setupwizard.enable_assist_gesture_training=true \
-    setupwizard.theme=glif_v3_light \
-    setupwizard.feature.skip_button_use_mobile_data.carrier1839=true \
-    setupwizard.feature.show_pai_screen_in_main_flow.carrier1839=false \
-    setupwizard.feature.show_pixel_tos=false \
-    setupwizard.feature.show_support_link_in_deferred_setup=false \
-    setupwizard.feature.day_night_mode_enabled=true \
-    setupwizard.feature.portal_notification=true
-
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI \
@@ -178,7 +168,10 @@ endif
 
 ifeq ($(WITH_GAPPS), true)
 # GApps
-include vendor/gms/products/gms.mk
+$(call inherit-product, vendor/gms/products/gms.mk)
+include vendor/gms/products/board.mk
+PRODUCT_PACKAGES += \
+     ThemedIconsOverlay
 endif
 
 
