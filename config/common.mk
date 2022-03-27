@@ -177,7 +177,23 @@ endif
 
 # RRO Overlays
 PRODUCT_PACKAGES += \
-    NavigationBarModeGesturalOverlayFS
+    NavigationBarModeGesturalOverlayFS \
+    StrokeSignalOverlay \
+    SneakySignalOverlay \
+    XperiaSignalOverlay \
+    ZigZagSignalOverlay \
+    WavySignalOverlay \
+    RoundSignalOverlay \
+    InsideSignalOverlay \
+    BarsSignalOverlay \
+    StrokeWiFiOverlay \
+    SneakyWiFiOverlay \
+    XperiaWiFiOverlay \
+    ZigZagWiFiOverlay \
+    WavyWiFiOverlay \
+    RoundWiFiOverlay \
+    InsideWiFiOverlay \
+    BarsWiFiOverlay
 
 TARGET_FACE_UNLOCK_SUPPORTED ?= true
 ifeq ($(TARGET_FACE_UNLOCK_SUPPORTED),true)
