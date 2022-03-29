@@ -223,8 +223,13 @@ PRODUCT_PACKAGES += \
     AndroidBlackThemeOverlay
 
 # Quick Tap
-#ifeq ($(TARGET_SUPPORTS_QUICK_TAP),true)
-#PRODUCT_COPY_FILES += \
-#    vendor/spark/prebuilt/common/etc/sysconfig/quick_tap.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/quick_tap.xml
-#endif
+ifeq ($(TARGET_SUPPORTS_QUICK_TAP),true)
+PRODUCT_COPY_FILES += \
+    vendor/spark/prebuilt/common/etc/sysconfig/quick_tap.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/quick_tap.xml
+endif
 
+PRODUCT_COPY_FILES += \
+    vendor/spark/prebuilt/common/etc/sysconfig/game_overlay.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/game_overlay.xml 
+    vendor/spark/prebuilt/common/etc/sysconfig/dreamliner.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/dreamliner.xml \
+    vendor/spark/prebuilt/common/etc/sysconfig/adaptivecharging.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/adaptivecharging.xml \
+    vendor/spark/prebuilt/common/etc/sysconfig/GoogleCamera_6gb_or_more_ram.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/GoogleCamera_6gb_or_more_ram.xml
