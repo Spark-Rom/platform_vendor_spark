@@ -213,7 +213,8 @@ PRODUCT_PACKAGES += \
     SparkWallpaperStub \
     GameSpace \
     OmniJaws \
-    ParallelSpace
+    ParallelSpace \
+    SettingsIntelligenceGooglePrebuilt
 
 # FaceUnlock
 ifneq ($(TARGET_FACE_UNLOCK_OPTOUT), true)
