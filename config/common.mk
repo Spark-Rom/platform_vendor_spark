@@ -195,6 +195,18 @@ PRODUCT_PACKAGES += \
     InsideWiFiOverlay \
     BarsWiFiOverlay
 
+# Navbar styles
+PRODUCT_PACKAGES += \
+    NavbarAndroidOverlay \
+    NavbarAsusOverlay \
+    NavbarMotoOverlay \
+    NavbarNexusOverlay \
+    NavbarOldOverlay \
+    NavbarOnePlusOverlay \
+    NavbarOneUiOverlay \
+    NavbarSammyOverlay \
+    NavbarTecnoCamonOverlay
+
 TARGET_FACE_UNLOCK_SUPPORTED ?= true
 ifeq ($(TARGET_FACE_UNLOCK_SUPPORTED),true)
 PRODUCT_PACKAGES += \
