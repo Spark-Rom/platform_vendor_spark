@@ -227,6 +227,10 @@ endif
 PRODUCT_PACKAGES += \
     GamingMode
 
+# Settings Intelligence
+PRODUCT_PACKAGES += \
+    SettingsIntelligenceGooglePrebuilt
+
 PRODUCT_PACKAGES += \
     hosts.spark_adblock
 
