@@ -941,3 +941,4 @@ function fixup_common_out_dir() {
         mkdir -p ${common_out_dir}
     fi
 }
+export SELINUX_IGNORE_NEVERALLOWS=true
