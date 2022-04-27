@@ -227,6 +227,10 @@ endif
 PRODUCT_PACKAGES += \
     GamingMode
 
+# SoftAPManager
+PRODUCT_PACKAGES += \
+    SoftAPManager
+
 # Settings Intelligence
 PRODUCT_PACKAGES += \
     SettingsIntelligenceGooglePrebuilt
