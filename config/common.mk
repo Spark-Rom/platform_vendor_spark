@@ -170,8 +170,6 @@ ifeq ($(WITH_GAPPS), true)
 # GApps
 $(call inherit-product, vendor/gms/products/gms.mk)
 include vendor/gms/products/board.mk
-PRODUCT_PACKAGES += \
-     ThemedIconsOverlay
 endif
 
 
