@@ -22,9 +22,9 @@ TARGET_PRODUCT_SHORT := $(subst spark_,,$(SPARK_BUILD_TYPE))
 SPARK_BUILD_TYPE ?= UNOFFICIAL
 
 # Only include Updater for official, weeklies, CI and nightly builds
-ifeq ($(filter-out OFFICIAL WEEKLIES NIGHTLY CI,$(SPARK_BUILD_TYPE)),)
+ifeq ($(filter-out OFFICIAL Official WEEKLIES NIGHTLY CI,$(SPARK_BUILD_TYPE)),)
     PRODUCT_PACKAGES += \
-        Updater
+        Updates
 endif
 
 # Sign builds if building an official, weekly, CI and nightly build
