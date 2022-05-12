@@ -13,4 +13,34 @@ PRODUCT_PACKAGES += \
     FontOnePlusSansOverlay \
     FontOneplusSlateSourceOverlay \
     FontOneUISansOverlay \
-    FontCustomOverlay
+    FontCustomOverlay \
+    FontAccuratistOverlay \
+    FontAclonicaOverlay \
+    FontAmaranteOverlay \
+    FontBariolOverlay \
+    FontCagliostroOverlay \
+    FontCoconOverlay \
+    FontComfortaaOverlay \
+    FontComicSansOverlay \
+    FontCoolstoryOverlay \
+    FontExotwoOverlay \
+    FontFifa2018Overlay \
+    FontGrandHotelOverlay \
+    FontHarmonySansOverlay \
+    FontLatoOverlay \
+    FontLGSmartGothicOverlay \
+    FontLinotteOverlay \
+    FontNokiaPureOverlay \
+    FontNunitoOverlay \
+    FontOswaldOverlay \
+    FontQuandoOverlay \
+    FontRedressedOverlay \
+    FontReemKufiOverlay \
+    FontRobotoCondensedOverlay \
+    FontRosemaryOverlay \
+    FontRubikOverlay \
+    FontSamsungOneOverlay \
+    FontSonySketchOverlay \
+    FontStoropiaOverlay \
+    FontSurferOverlay \
+    FontUbuntuOverlay
