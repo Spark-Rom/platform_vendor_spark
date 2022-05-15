@@ -2,6 +2,7 @@
 PRODUCT_PACKAGES += \
     ThemePicker \
     SparkWallpaperStub \
+    SparkThemesStub \
     QuickAccessWallet \
     wellbeingconf \
     googleconf
