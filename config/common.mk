@@ -226,9 +226,9 @@ PRODUCT_PACKAGES += \
     UdfpsResources
 endif
 
-# GamingMode
+# Extra packages
 PRODUCT_PACKAGES += \
-    GamingMode
+    GameSpace
 
 # SoftAPManager
 PRODUCT_PACKAGES += \
