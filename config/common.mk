@@ -228,7 +228,7 @@ endif
 
 # GamingMode
 PRODUCT_PACKAGES += \
-    GamingMode
+    GameSpace
 
 # SoftAPManager
 PRODUCT_PACKAGES += \
