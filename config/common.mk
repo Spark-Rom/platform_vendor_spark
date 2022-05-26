@@ -230,10 +230,6 @@ endif
 PRODUCT_PACKAGES += \
     GameSpace
 
-# SoftAPManager
-PRODUCT_PACKAGES += \
-    SoftAPManager
-
 # Settings Intelligence
 PRODUCT_PACKAGES += \
     SettingsIntelligenceGooglePrebuilt
