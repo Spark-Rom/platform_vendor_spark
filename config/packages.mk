@@ -7,6 +7,10 @@ PRODUCT_PACKAGES += \
     wellbeingconf \
     googleconf
 
+# GMS
+PRODUCT_PACKAGES += \
+    GmsCompat
+
 ifneq ($(TARGET_NO_PREBUILT_CAMERA),true)
 PRODUCT_PACKAGES += \
     Camera
