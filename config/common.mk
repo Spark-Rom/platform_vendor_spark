@@ -166,7 +166,7 @@ include vendor/spark/config/version.mk
 # Packages
 include vendor/spark/config/packages.mk
 
-TARGET_BUILD_LAWNCHAIR ?= true
+TARGET_BUILD_LAWNCHAIR ?= false
 ifeq ($(strip $(TARGET_BUILD_LAWNCHAIR)),true)
 include vendor/lawnchair/lawnchair.mk
 endif
