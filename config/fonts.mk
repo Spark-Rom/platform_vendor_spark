@@ -7,43 +7,46 @@ PRODUCT_COPY_FILES += \
 
 #Custom packages
 PRODUCT_PACKAGES += \
-    FontGInterOverlay \
+    FontAccuratistOverlay \
+    FontAclonicaOverlay \
+    FontAmaranteOverlay \
+    FontBariolOverlay \
+    FontCagliostroOverlay \
+    FontCoconOverlay \
+    FontComfortaaOverlay \
+    FontComicSansOverlay \
+    FontCoolstoryOverlay \
+    FontExotwoOverlay \
+    FontFifa2018Overlay \
+    FontFluidSansOverlay \
     FontGoogleSansOverlay \
+    FontGrandHotelOverlay \
     FontHarmonySansOverlay \
-    FontLinotteSourceOverlay \
-    FontManropeOverlay \
-    FontOnePlusSansOverlay \
-    FontOneplusSlateSourceOverlay \
-    FontOneUISansOverlay \
-    FontAclonicaSourceOverlay \
-    FontAmaranteSourceOverlay \
-    FontAntipastoProSourceOverlay \
-    FontBariolSourceOverlay \
-    FontCagliostroSourceOverlay \
-    FontCoconSourceOverlay \
-    FontComfortaaSourceOverlay \
-    FontComicSansSourceOverlay \
-    FontCoolstorySourceOverlay \
-    FontEvolveSansSourceOverlay \
-    FontExotwoSourceOverlay \
-    FontFifa2018SourceOverlay \
-    FontFucekSourceOverlay \
-    FontGrandHotelSourceOverlay \
-    FontLGSmartGothicSourceOverlay \
-    FontLemonMilkSourceOverlay \
-    FontNokiaPureSourceOverlay \
-    FontNunitoSourceOverlay \
-    FontOdudaSourceOverlay \
-    FontQuandoSourceOverlay \
-    FontRedressedSourceOverlay \
-    FontReemKufiSourceOverlay \
-    FontRosemarySourceOverlay \
-    FontSamsungOneSourceOverlay \
-    FontSimpleDaySourceOverlay \
-    FontSonySketchSourceOverlay \
-    FontStoropiaSourceOverlay \
-    FontSurferSourceOverlay \
-    FontUbuntuSourceOverlay \
-    RobotoFallback-VF.ttf \
+    FontInterSourceOverlay \
+    FontJTLeonorOverlay \
+    FontLatoOverlay \
+    FontLGSmartGothicOverlay \
+    FontLinotteOverlay \
+    FontMiSansOverlay \
+    FontNokiaPureOverlay \
+    FontNothiingDotOverlay \
+    FontNothingDotHeadlineOverlay \
+    FontNunitoOverlay \
+    FontOneplusSansOverlay \
+    FontOneplusSlateOverlay \
     FontOppoSansOverlay \
-    FontNothiingDotOverlay
+    FontOswaldOverlay \
+    FontProductSansVHOverlay \
+    FontQuandoOverlay \
+    FontRedressedOverlay \
+    FontReemKufiOverlay \
+    FontRobotoCondensedOverlay \
+    FontRosemaryOverlay \
+    FontRubikOverlay \
+    FontSanFranciscoDisplayProSourceOverlay \
+    FontSamsungOneOverlay \
+    FontSimpleDaySourceOverlay \
+    FontSonySketchOverlay \
+    FontStoropiaOverlay \
+    FontSurferOverlay \
+    FontUbuntuOverlay

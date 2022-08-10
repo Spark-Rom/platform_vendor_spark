@@ -1,4 +1,0 @@
-prebuilt_font {
-    name: "RobotoFallback-VF.ttf",
-    src: "RobotoFallback-VF.ttf",
-}
