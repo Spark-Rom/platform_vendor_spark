@@ -171,11 +171,6 @@ include vendor/spark/config/version.mk
 # Packages
 include vendor/spark/config/packages.mk
 
-TARGET_BUILD_LAWNCHAIR ?= false
-ifeq ($(strip $(TARGET_BUILD_LAWNCHAIR)),true)
-include vendor/lawnchair/lawnchair.mk
-endif
-
 ifeq ($(WITH_GAPPS), true)
 # GApps
 $(call inherit-product, vendor/gms/products/gms.mk)
@@ -183,102 +178,8 @@ include vendor/gms/products/board.mk
 endif
 
 
-# RRO Overlays
-PRODUCT_PACKAGES += \
-    NavigationBarModeGesturalOverlayFS \
-    StrokeSignalOverlay \
-    SneakySignalOverlay \
-    XperiaSignalOverlay \
-    ZigZagSignalOverlay \
-    WavySignalOverlay \
-    RoundSignalOverlay \
-    InsideSignalOverlay \
-    BarsSignalOverlay \
-    StrokeWiFiOverlay \
-    SneakyWiFiOverlay \
-    XperiaWiFiOverlay \
-    ZigZagWiFiOverlay \
-    WavyWiFiOverlay \
-    RoundWiFiOverlay \
-    InsideWiFiOverlay \
-    BarsWiFiOverlay \
-    AquariumSignalOverlay \
-    ButterflySignalOverlay \
-    DaunSignalOverlay \
-    DecSignalOverlay \
-    DeepSignalOverlay \
-    EqualSignalOverlay \
-    FanSignalOverlay \
-    HuaweiSignalOverlay \
-    RelSignalOverlay \
-    ScrollSignalOverlay \
-    SeaSignalOverlay \
-    StackSignalOverlay \
-    WannuiSignalOverlay \
-    WindowsSignalOverlay \
-    WingSignalOverlay \
-    CircleSignalOverlay \
-    IosSignalOverlay \
-    MiniSignalOverlay \
-    OdinSignalOverlay \
-    PillsSignalOverlay \
-    RomanSignalOverlay \
-    WeedWiFiOverlay \
-    DoraSignalOverlay \
-    DoraWiFiOverlay
-
-# Navbar styles
-PRODUCT_PACKAGES += \
-    NavbarAndroidOverlay \
-    NavbarAsusOverlay \
-    NavbarMotoOverlay \
-    NavbarNexusOverlay \
-    NavbarOldOverlay \
-    NavbarOnePlusOverlay \
-    NavbarOneUiOverlay \
-    NavbarSammyOverlay \
-    NavbarTecnoCamonOverlay
-
-TARGET_FACE_UNLOCK_SUPPORTED ?= true
-ifeq ($(TARGET_FACE_UNLOCK_SUPPORTED),true)
-PRODUCT_PACKAGES += \
-    FaceUnlockService
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.face_unlock_service.enabled=$(TARGET_FACE_UNLOCK_SUPPORTED)
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.biometrics.face.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.biometrics.face.xml
-endif
-
-# Udfps
-ifeq ($(EXTRA_UDFPS_ANIMATIONS),true)
-PRODUCT_PACKAGES += \
-    UdfpsResources
-endif
-
-# GamingMode
-PRODUCT_PACKAGES += \
-    GameSpace
-
-# Settings Intelligence
-PRODUCT_PACKAGES += \
-    SettingsIntelligenceGooglePrebuilt
-
 PRODUCT_PACKAGES += \
     hosts.spark_adblock
-
-# Themes
-PRODUCT_PACKAGES += \
-    AndroidBlackThemeOverlay
-
-# Quick Tap
-ifeq ($(TARGET_SUPPORTS_QUICK_TAP),true)
-PRODUCT_COPY_FILES += \
-    vendor/spark/prebuilt/common/etc/sysconfig/quick_tap.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/quick_tap.xml
-endif
-
-PRODUCT_COPY_FILES += \
-    vendor/spark/prebuilt/common/etc/sysconfig/game_overlay.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/game_overlay.xml \
-    vendor/spark/prebuilt/common/etc/sysconfig/GoogleCamera_6gb_or_more_ram.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/GoogleCamera_6gb_or_more_ram.xml
 
 # Adaptive Charging
 ifeq ($(TARGET_SUPPORTS_ADAPTIVE_CHARGING),true)
