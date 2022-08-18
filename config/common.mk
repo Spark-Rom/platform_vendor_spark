@@ -159,6 +159,10 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI \
     Settings
 
+# Settings Intelligence
+PRODUCT_PACKAGES += \
+    SettingsIntelligenceGooglePrebuilt
+
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/spark/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/spark/overlay/common
 
