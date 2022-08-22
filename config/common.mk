@@ -163,6 +163,10 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 PRODUCT_PACKAGES += \
     SettingsIntelligenceGooglePrebuilt
 
+# Gesture Overlays
+PRODUCT_PACKAGES += \
+  ImmersiveNavigationOverlay
+
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/spark/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/spark/overlay/common
 
