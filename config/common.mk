@@ -185,6 +185,61 @@ $(call inherit-product, vendor/gms/products/gms.mk)
 include vendor/gms/products/board.mk
 endif
 
+#  RRO Overlays
+PRODUCT_PACKAGES += \
+    NavigationBarModeGesturalOverlayFS \
+    StrokeSignalOverlay \
+    SneakySignalOverlay \
+    XperiaSignalOverlay \
+    ZigZagSignalOverlay \
+    WavySignalOverlay \
+    RoundSignalOverlay \
+    InsideSignalOverlay \
+    BarsSignalOverlay \
+    StrokeWiFiOverlay \
+    SneakyWiFiOverlay \
+    XperiaWiFiOverlay \
+    ZigZagWiFiOverlay \
+    WavyWiFiOverlay \
+    RoundWiFiOverlay \
+    InsideWiFiOverlay \
+    BarsWiFiOverlay \
+    AquariumSignalOverlay \
+    ButterflySignalOverlay \
+    DaunSignalOverlay \
+    DecSignalOverlay \
+    DeepSignalOverlay \
+    EqualSignalOverlay \
+    FanSignalOverlay \
+    HuaweiSignalOverlay \
+    RelSignalOverlay \
+    ScrollSignalOverlay \
+    SeaSignalOverlay \
+    StackSignalOverlay \
+    WannuiSignalOverlay \
+    WindowsSignalOverlay \
+    WingSignalOverlay \
+    CircleSignalOverlay \
+    IosSignalOverlay \
+    MiniSignalOverlay \
+    OdinSignalOverlay \
+    PillsSignalOverlay \
+    RomanSignalOverlay \
+    WeedWiFiOverlay \
+    DoraSignalOverlay \
+    DoraWiFiOverlay
+
+# Navbar styles
+PRODUCT_PACKAGES += \
+    NavbarAndroidOverlay \
+    NavbarAsusOverlay \
+    NavbarMotoOverlay \
+    NavbarNexusOverlay \
+    NavbarOldOverlay \
+    NavbarOnePlusOverlay \
+    NavbarOneUiOverlay \
+    NavbarSammyOverlay \
+    NavbarTecnoCamonOverlay
 
 PRODUCT_PACKAGES += \
     hosts.spark_adblock
