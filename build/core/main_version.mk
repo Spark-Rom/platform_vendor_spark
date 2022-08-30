@@ -14,3 +14,7 @@ ADDITIONAL_SYSTEM_PROPERTIES += \
     ro.spark.version=$(SPARK_VERSION) \
     ro.spark.build_security_patch=$(SPARK_SECURITY_PATCH) \
     ro.modversion=$(SPARK_VERSION)
+
+# SparkOS Android 12L Specific Props
+ADDITIONAL_SYSTEM_PROPERTIES += \
+    ro.spark.settings.android_version=12L
