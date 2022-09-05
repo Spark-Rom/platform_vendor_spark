@@ -150,6 +150,10 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_PACKAGES_DEBUG += \
     procmem
 
+# GamingMode
+PRODUCT_PACKAGES += \
+    GameSpace
+
 # Root
 PRODUCT_PACKAGES += \
     adb_root
