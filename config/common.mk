@@ -154,6 +154,9 @@ PRODUCT_PACKAGES_DEBUG += \
 PRODUCT_PACKAGES += \
     GameSpace
 
+PRODUCT_PACKAGES += \
+    OmniJaws
+
 # Root
 PRODUCT_PACKAGES += \
     adb_root
