@@ -254,6 +254,12 @@ PRODUCT_PACKAGES += \
     UdfpsResources
 endif
 
+# QS Panel
+PRODUCT_PACKAGES += \
+    QSRoundedRectangle \
+    QSOutline \
+    QSTwoToneAccent
+
 PRODUCT_PACKAGES += \
     hosts.spark_adblock
 
