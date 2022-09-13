@@ -124,7 +124,7 @@ def get_manifest_path():
         return ".repo/manifests/{}".format(m.find("include").get("name"))
 
 def get_default_revision():
-    return "spark"
+    return "pyro"
 
 def get_from_manifest(devicename):
     try:
