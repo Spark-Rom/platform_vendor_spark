@@ -154,6 +154,10 @@ PRODUCT_PACKAGES_DEBUG += \
 PRODUCT_PACKAGES += \
     GameSpace
 
+# Repainter integration
+PRODUCT_PACKAGES += \
+    RepainterServicePriv
+
 PRODUCT_PACKAGES += \
     OmniJaws
 
