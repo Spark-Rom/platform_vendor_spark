@@ -273,7 +273,10 @@ PRODUCT_PACKAGES += \
 
 # Custom Themes
 PRODUCT_PACKAGES += \
-    AndroidBlackThemeOverlay
+    AndroidBlackThemeOverlay \
+    AndroidClearThemeOverlay \
+    AndroidVividThemeOverlay
+
 
 # Adaptive Charging
 ifeq ($(TARGET_SUPPORTS_ADAPTIVE_CHARGING),true)
