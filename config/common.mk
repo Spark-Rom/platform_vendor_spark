@@ -192,6 +192,14 @@ $(call inherit-product, vendor/gms/products/gms.mk)
 include vendor/gms/products/board.mk
 endif
 
+# Vanilla
+ifneq ($(WITH_GAPPS),true)
+
+PRODUCT_PACKAGES += \
+    Apps \
+    GmsCompat
+endif
+
 #  RRO Overlays
 PRODUCT_PACKAGES += \
     NavigationBarModeGesturalOverlayFS \

@@ -2,6 +2,7 @@
 PRODUCT_PACKAGES += \
     ThemePicker \
     SparkWallpaperStub \
+    ParallelSpacePrebuilt \
     SparkThemesStub \
     QuickAccessWallet \
     wellbeingconf \
