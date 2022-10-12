@@ -270,7 +270,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     AndroidBlackThemeOverlay \
     AndroidClearThemeOverlay \
-    AndroidVividThemeOverlay
+    AndroidVividThemeOverlay \
+    AndroidSnowPaintDropTheme \
+    AndroidEspressoTheme
 
 
 # Adaptive Charging
