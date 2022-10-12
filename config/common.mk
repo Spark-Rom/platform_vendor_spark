@@ -1,6 +1,8 @@
 # Allow vendor/extras to override any property by setting it first
 $(call inherit-product-if-exists, vendor/extras/product.mk)
 $(call inherit-product, vendor/spark/config/bootanimation.mk)
+$(call inherit-product, vendor/spark/audio/AudioPackage.mk)
+
 PRODUCT_BRAND ?= Spark
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
