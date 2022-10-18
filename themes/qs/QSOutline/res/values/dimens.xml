@@ -20,7 +20,7 @@
     <dimen name="custom_rounded_slider_height">48dp</dimen>
     <dimen name="slider_progress_height">48dp</dimen>
     <dimen name="qs_corner_radius">?android:attr/dialogCornerRadius</dimen>
-    <dimen name="qs_tile_height">63dp</dimen>
+    <dimen name="qs_tile_height">74dp</dimen>
     <dimen name="qs_tile_stroke">2.5dp</dimen>
     <dimen name="brightness_mirror_height">48dp</dimen>
     <dimen name="rounded_slider_background_rounded_corner">?android:attr/dialogCornerRadius</dimen>
