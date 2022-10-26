@@ -154,6 +154,10 @@ PRODUCT_PACKAGES_DEBUG += \
 PRODUCT_PACKAGES += \
     GameSpace
 
+# Repainter integration
+PRODUCT_PACKAGES += \
+    RepainterServicePriv
+
 PRODUCT_PACKAGES += \
     OmniJaws
 
@@ -164,7 +168,8 @@ PRODUCT_PACKAGES += \
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI \
-    Settings
+    Settings \
+    Launcher3QuickStep
 
 # Settings Intelligence
 PRODUCT_PACKAGES += \
@@ -275,7 +280,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     AndroidBlackThemeOverlay \
     AndroidClearThemeOverlay \
-    AndroidVividThemeOverlay
+    AndroidVividThemeOverlay \
+    AndroidSnowPaintDropThemeOverlay \
+    AndroidEspressoThemeOverlay
 
 
 # Adaptive Charging

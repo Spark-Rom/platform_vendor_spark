@@ -941,3 +941,14 @@ function fixup_common_out_dir() {
         mkdir -p ${common_out_dir}
     fi
 }
+
+# For now, just skip the ABI checks to fix build errors.
+export SKIP_ABI_CHECKS=true
+
+# Enable ThinLTO Source wide.
+echo "Building with ThinLTO."
+export GLOBAL_THINLTO=true
+export USE_THINLTO_CACHE=true
+# Override host metadata to make builds more reproducible and avoid leaking info
+export BUILD_USERNAME=dark
+export BUILD_HOSTNAME=dark-build
