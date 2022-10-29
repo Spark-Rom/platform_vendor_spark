@@ -80,6 +80,12 @@
     <alias name="googlesans-medium" to="googlesans" weight="500" />
     <alias name="googlesans-bold" to="googlesans" weight="700" />
 
+    <!-- Google Sans Clock-->
+    <family customizationType="new-named-family" name="googlesansclock">
+        <font>GoogleSansClock-Regular.ttf</font>
+    </family>
+    <alias name="googlesansclock-regular" to="googlesansclock" weight="400" />
+
     <!-- Product Sans VH -->
     <family customizationType="new-named-family" name="productsansvh">
         <font weight="400" style="normal">ProductSansRegular.otf</font>
