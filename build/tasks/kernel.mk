@@ -36,8 +36,6 @@
 #
 #   TARGET_KERNEL_CLANG_PATH           = Clang prebuilts path, optional
 #
-#   KERNEL_SUPPORTS_LLVM_TOOLS         = If set, switches ar, nm, objcopy, objdump to llvm tools instead of using GNU Binutils, optional
-#
 #   BOARD_KERNEL_IMAGE_NAME            = Built image name
 #                                          for ARM use: zImage
 #                                          for ARM64 use: Image.gz
@@ -71,6 +69,9 @@
 #                                          modules in system instead of vendor
 #   NEED_KERNEL_MODULE_VENDOR_OVERLAY  = Optional, if true, install kernel
 #                                          modules in vendor_overlay instead of vendor
+#
+#   TARGET_FORCE_PREBUILT_KERNEL       = Optional, use TARGET_PREBUILT_KERNEL even if
+#                                          kernel sources are present
 
 ifneq ($(TARGET_NO_KERNEL),true)
 ifneq ($(TARGET_NO_KERNEL_OVERRIDE),true)
@@ -230,23 +231,6 @@ ifneq ($(TARGET_KERNEL_CLANG_COMPILE),false)
     else
         # Use the default version of clang if TARGET_KERNEL_CLANG_VERSION hasn't been set by the device config
         KERNEL_CLANG_VERSION := $(LLVM_PREBUILTS_VERSION)
-    endif
-
-    # As 
-    ifeq ($(KERNEL_SUPPORTS_LLVM_TOOLS),true)
-        KERNEL_LD := LD=ld.lld
-        KERNEL_AR := AR=llvm-ar
-        KERNEL_OBJCOPY := OBJCOPY=llvm-objcopy
-        KERNEL_OBJDUMP := OBJDUMP=llvm-objdump
-        KERNEL_NM := NM=llvm-nm
-        KERNEL_STRIP := STRIP=llvm-strip
-    else
-        KERNEL_LD :=
-        KERNEL_AR :=
-        KERNEL_OBJCOPY :=
-        KERNEL_OBJDUMP :=
-        KERNEL_NM :=
-        KERNEL_STRIP :=
     endif
     TARGET_KERNEL_CLANG_PATH ?= $(BUILD_TOP)/prebuilts/clang/host/$(HOST_PREBUILT_TAG)/$(KERNEL_CLANG_VERSION)
     ifeq (,$(filter 5.10, $(TARGET_KERNEL_VERSION)))
