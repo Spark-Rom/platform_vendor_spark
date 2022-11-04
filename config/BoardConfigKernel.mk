@@ -1,5 +1,4 @@
 # Copyright (C) 2018-2022 The LineageOS Project
-#           (C) 2018-2020 The PixelExperience Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -56,7 +55,7 @@
 #                                          is in PATH
 #   USE_CCACHE                         = Enable ccache (global Android flag)
 
-BUILD_TOP := $(shell pwd)
+BUILD_TOP := $(abspath .)
 
 TARGET_AUTO_KDIR := $(shell echo $(TARGET_DEVICE_DIR) | sed -e 's/^device/kernel/g')
 TARGET_KERNEL_SOURCE ?= $(TARGET_AUTO_KDIR)
@@ -68,9 +67,8 @@ else
     KERNEL_ARCH := $(TARGET_KERNEL_ARCH)
 endif
 
-TARGET_KERNEL_HEADERS ?= $(TARGET_KERNEL_SOURCE)
-KERNEL_VERSION := $(shell grep "^VERSION = " $(TARGET_KERNEL_SOURCE)/Makefile | awk '{ print $$3 }')
-KERNEL_PATCHLEVEL := $(shell grep "^PATCHLEVEL = " $(TARGET_KERNEL_SOURCE)/Makefile | awk '{ print $$3 }')
+KERNEL_VERSION := $(shell grep -s "^VERSION = " $(TARGET_KERNEL_SOURCE)/Makefile | awk '{ print $$3 }')
+KERNEL_PATCHLEVEL := $(shell grep -s "^PATCHLEVEL = " $(TARGET_KERNEL_SOURCE)/Makefile | awk '{ print $$3 }')
 TARGET_KERNEL_VERSION ?= $(shell echo $(KERNEL_VERSION)"."$(KERNEL_PATCHLEVEL))
 
 ifneq ($(TARGET_KERNEL_CLANG_VERSION),)
@@ -91,35 +89,21 @@ endif
 # Clear this first to prevent accidental poisoning from env
 KERNEL_MAKE_FLAGS :=
 
-# Add back threads, ninja cuts this to $(nproc)/2
-KERNEL_MAKE_FLAGS += -j$(shell prebuilts/tools-lineage/$(HOST_PREBUILT_TAG)/bin/nproc --all)
+# Add back threads, ninja cuts this to $(getconf _NPROCESSORS_ONLN)/2
+KERNEL_MAKE_FLAGS += -j$(shell getconf _NPROCESSORS_ONLN)
 
 TOOLS_PATH_OVERRIDE := \
-    LD_LIBRARY_PATH=$(BUILD_TOP)/prebuilts/tools-lineage/$(HOST_PREBUILT_TAG)/lib:$$LD_LIBRARY_PATH \
     PERL5LIB=$(BUILD_TOP)/prebuilts/tools-lineage/common/perl-base
 
 # 5.10+ can fully compile without gcc
 ifeq (,$(filter 5.10, $(TARGET_KERNEL_VERSION)))
     GCC_PREBUILTS := $(BUILD_TOP)/prebuilts/gcc/$(HOST_PREBUILT_TAG)
-    ifeq ($(TARGET_KERNEL_NEW_GCC_COMPILE),true)
-    ifeq ($(TARGET_KERNEL_CLANG_COMPILE),true)
-        $(error TARGET_KERNEL_NEW_GCC_COMPILE cannot be used with TARGET_KERNEL_CLANG_COMPILE!)
-    endif
-        # arm64 toolchain
-        KERNEL_TOOLCHAIN_arm64 := $(GCC_PREBUILTS)/aarch64/aarch64-elf/bin
-        KERNEL_TOOLCHAIN_PREFIX_arm64 := aarch64-elf-
-        # arm toolchain
-        KERNEL_TOOLCHAIN_arm := $(GCC_PREBUILTS)/arm/arm-eabi/bin
-        KERNEL_TOOLCHAIN_PREFIX_arm := arm-eabi-
-    else
-        # arm64 toolchain
-        KERNEL_TOOLCHAIN_arm64 := $(GCC_PREBUILTS)/aarch64/aarch64-linux-android-4.9/bin
-        KERNEL_TOOLCHAIN_PREFIX_arm64 := aarch64-linux-android-
-        # arm toolchain
-        KERNEL_TOOLCHAIN_arm := $(GCC_PREBUILTS)/arm/arm-linux-androideabi-4.9/bin
-        KERNEL_TOOLCHAIN_PREFIX_arm := arm-linux-androidkernel-
-    endif
-
+    # arm64 toolchain
+    KERNEL_TOOLCHAIN_arm64 := $(GCC_PREBUILTS)/aarch64/aarch64-linux-android-4.9/bin
+    KERNEL_TOOLCHAIN_PREFIX_arm64 := aarch64-linux-android-
+    # arm toolchain
+    KERNEL_TOOLCHAIN_arm := $(GCC_PREBUILTS)/arm/arm-linux-androideabi-4.9/bin
+    KERNEL_TOOLCHAIN_PREFIX_arm := arm-linux-androidkernel-
     # x86 toolchain
     KERNEL_TOOLCHAIN_x86 := $(GCC_PREBUILTS)/x86/x86_64-linux-android-4.9/bin
     KERNEL_TOOLCHAIN_PREFIX_x86 := x86_64-linux-android-
@@ -166,11 +150,7 @@ ifeq (,$(filter 5.10, $(TARGET_KERNEL_VERSION)))
         endif
     endif
 
-    ifeq ($(HOST_OS),darwin)
-        KERNEL_MAKE_FLAGS += HOSTCFLAGS="-I$(BUILD_TOP)/external/elfutils/libelf -I/usr/local/opt/openssl/include" HOSTLDFLAGS="-L/usr/local/opt/openssl/lib -fuse-ld=lld"
-    else
-        KERNEL_MAKE_FLAGS += CPATH="/usr/include:/usr/include/x86_64-linux-gnu" HOSTLDFLAGS="-L/usr/lib/x86_64-linux-gnu -L/usr/lib64 -fuse-ld=lld"
-    endif
+    KERNEL_MAKE_FLAGS += CPATH="/usr/include:/usr/include/x86_64-linux-gnu" HOSTLDFLAGS="-L/usr/lib/x86_64-linux-gnu -L/usr/lib64 -fuse-ld=lld"
 
     ifeq ($(KERNEL_ARCH),arm64)
         # Add 32-bit GCC to PATH so that arm-linux-androidkernel-as is available for CONFIG_COMPAT_VDSO
