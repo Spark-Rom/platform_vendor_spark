@@ -251,6 +251,33 @@ PRODUCT_PACKAGES += \
     NavbarSammyOverlay \
     NavbarTecnoCamonOverlay
 
+# Icon Shapes
+PRODUCT_PACKAGES += \
+    IconShapeCloudyOverlay \
+    IconShapeCloudyRoundedOverlay \
+    IconShapeCylinderOverlay \
+    IconShapeCylinderRoundedOverlay \
+    IconShapeFlowerOverlay \
+    IconShapeFlowerRoundedOverlay \
+    IconShapeHeartOverlay \
+    IconShapeHeartRoundedOverlay \
+    IconShapeHexagonOverlay \
+    IconShapeLeafRoundedOverlay \
+    IconShapePebbleRoundedOverlay \
+    IconShapeLeafOverlay \
+    IconShapePebbleOverlay \
+    IconShapeRoundedHexagonOverlay \
+    IconShapeRoundedRectOverlay \
+    IconShapeSquareOverlay \
+    IconShapeSquircleOverlay \
+    IconShapeStretchedOverlay \
+    IconShapeTaperedRectOverlay \
+    IconShapeTeardropOverlay \
+    IconShapeVesselOverlay \
+    RohieIconMeowOverlay \
+    DefaultButSquareOverlay \
+    RiceBallsOverlay
+
 # Udfps
 ifeq ($(EXTRA_UDFPS_ANIMATIONS),true)
 PRODUCT_PACKAGES += \
