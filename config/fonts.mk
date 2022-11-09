@@ -52,4 +52,7 @@ PRODUCT_PACKAGES += \
     FontStoropiaOverlay \
     FontSurferOverlay \
     FontUbuntuOverlay \
-    FontGoogleSansClockOverlay
+    FontGoogleSansClockOverlay \
+    FontApiceOverlay \
+    FontAudimatOverlay \
+    FontGeometosOverlay
