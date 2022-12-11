@@ -1,4 +1,5 @@
 # Allow vendor/extras to override any property by setting it first
+$(call inherit-product, vendor/spark/config/audio.mk)
 $(call inherit-product-if-exists, vendor/extras/product.mk)
 $(call inherit-product, vendor/spark/config/bootanimation.mk)
 PRODUCT_BRAND ?= Spark
@@ -109,6 +110,12 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.com.google.ime.kb_pad_port_r=4 \
     ro.com.google.ime.kb_pad_land_l=64 \
     ro.com.google.ime.kb_pad_land_r=64
+
+# Include AOSP audio files
+#include vendor/spark/config/aosp_audio.mk
+
+# Include spark audio files
+#include vendor/spark/config/spark_audio.mk
 
 # Do not include art debug targets
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
