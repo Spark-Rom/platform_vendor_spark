@@ -328,3 +328,10 @@ ifeq ($(TARGET_SUPPORTS_ADAPTIVE_CHARGING),true)
 PRODUCT_COPY_FILES += \
     vendor/spark/prebuilt/common/etc/sysconfig/dreamliner.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/dreamliner.xml
 endif
+
+# Enable ThinLTO Source wide Conditionally.
+ifeq ($(TARGET_BUILD_WITH_LTO),true)
+GLOBAL_THINLTO := true
+USE_THINLTO_CACHE := true
+SKIP_ABI_CHECKS := true
+endif

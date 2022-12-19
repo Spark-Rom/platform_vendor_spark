@@ -941,8 +941,3 @@ function fixup_common_out_dir() {
         mkdir -p ${common_out_dir}
     fi
 }
-
-# Enable ThinLTO Source wide.
-echo "Building with ThinLTO."
-export GLOBAL_THINLTO=true
-export USE_THINLTO_CACHE=true
