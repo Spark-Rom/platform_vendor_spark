@@ -167,9 +167,11 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
     Settings \
     Launcher3QuickStep
 
-# Settings Intelligence
+# Google Stuff
 PRODUCT_PACKAGES += \
-    SettingsIntelligenceGooglePrebuilt
+    SettingsIntelligenceGooglePrebuilt \
+    SecurityHubPrebuilt \
+    Flipendo
 
 # Gesture Overlays
 PRODUCT_PACKAGES += \
