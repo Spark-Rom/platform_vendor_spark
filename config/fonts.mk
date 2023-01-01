@@ -5,54 +5,66 @@ PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/ttf,$(TARGET
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/fonts_customization.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/fonts_customization.xml
 
-#Custom packages
+# Clock Fonts
 PRODUCT_PACKAGES += \
-    FontCustomOverlay \
+    ClockFontAccuratistOverlay \
+    ClockFontApiceOverlay \
+    ClockFontAudimatOverlay \
+    ClockFontBariolOverlay \
+    ClockFontCoconOverlay \
+    ClockFontComfortaaOverlay \
+    ClockFontComicSansOverlay \
+    ClockFontCoolstoryOverlay \
+    ClockFontExotwoOverlay \
+    ClockFontEvolveSansOverlay \
+    ClockFontFluidSansOverlay \
+    ClockFontGoogleSansOverlay \
+    ClockFontGeometosOverlay \
+    ClockFontHarmonySansOverlay \
+    ClockFontJTLeonorOverlay \
+    ClockFontLinotteOverlay \
+    ClockFontMiSansOverlay \
+    ClockFontNokiaPureOverlay \
+    ClockFontNothingDotHeadlineOverlay \
+    ClockFontOneplusSansOverlay \
+    ClockFontOneplusSlateOverlay \
+    ClockFontOppoSansOverlay \
+    ClockFontProductSansVHOverlay \
+    ClockFontRobotoCondensedOverlay \
+    ClockFontRosemaryOverlay \
+    ClockFontRubikOverlay \
+    ClockFontSanFranciscoDisplayProSourceOverlay \
+    ClockFontSamsungOneOverlay \
+    ClockFontSimpleDaySourceOverlay \
+    ClockFontSonySketchOverlay \
+
+# Fonts
+PRODUCT_PACKAGES += \
     FontAccuratistOverlay \
-    FontAclonicaOverlay \
-    FontAmaranteOverlay \
     FontBariolOverlay \
-    FontCagliostroOverlay \
     FontCoconOverlay \
     FontComfortaaOverlay \
     FontComicSansOverlay \
     FontCoolstoryOverlay \
     FontExotwoOverlay \
-    FontFifa2018Overlay \
+    FontEvolveSansOverlay \
     FontFluidSansOverlay \
     FontGoogleSansOverlay \
-    FontGrandHotelOverlay \
     FontHarmonySansOverlay \
-    FontInterSourceOverlay \
     FontJTLeonorOverlay \
-    FontLatoOverlay \
-    FontLGSmartGothicOverlay \
     FontLinotteOverlay \
     FontMiSansOverlay \
     FontNokiaPureOverlay \
     FontNothiingDotOverlay \
     FontNothingDotHeadlineOverlay \
-    FontNunitoOverlay \
     FontOneplusSansOverlay \
     FontOneplusSlateOverlay \
-    RobotoFallback-VF.ttf \
     FontOppoSansOverlay \
-    FontOswaldOverlay \
     FontProductSansVHOverlay \
-    FontQuandoOverlay \
-    FontRedressedOverlay \
-    FontReemKufiOverlay \
     FontRobotoCondensedOverlay \
     FontRosemaryOverlay \
     FontRubikOverlay \
     FontSanFranciscoDisplayProSourceOverlay \
     FontSamsungOneOverlay \
     FontSimpleDaySourceOverlay \
-    FontSonySketchOverlay \
-    FontStoropiaOverlay \
-    FontSurferOverlay \
-    FontUbuntuOverlay \
-    FontGoogleSansClockOverlay \
-    FontApiceOverlay \
-    FontAudimatOverlay \
-    FontGeometosOverlay
+    FontSonySketchOverlay

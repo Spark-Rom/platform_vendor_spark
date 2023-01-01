@@ -26,6 +26,6 @@
     <application android:label="@string/font_oneplussans_overlay" android:hasCode="false">
         <meta-data
             android:name="android.theme.customization.REQUIRED_SYSTEM_FONTS"
-            android:value="op-sans" />
+            android:value="oneplus-sans" />
     </application>
 </manifest>
