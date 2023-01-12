@@ -4,6 +4,7 @@ PRODUCT_PACKAGES += \
     SparkWallpaperStub \
     ParallelSpacePrebuilt \
     SparkThemesStub \
+    SparkThemedIcons \
     QuickAccessWallet \
     wellbeingconf \
     googleconf
