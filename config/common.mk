@@ -297,7 +297,13 @@ endif
 PRODUCT_PACKAGES += \
     QSRoundedRectangle \
     QSOutline \
-    QSTwoToneAccent
+    QSTwoToneAccent \
+    QSShaded \
+    QSCyberPunk \
+    QSNeumorph \
+    QSReflected \
+    QSSurround \
+    QSThin
 
 PRODUCT_PACKAGES += \
     hosts.spark_adblock
