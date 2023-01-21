@@ -17,5 +17,5 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Name of a font family to use for body text. -->
-    <string name="config_clockFontFamily" translatable="false">googlesans</string>
+    <string name="config_clockFontFamily" translatable="false">googlesansclock</string>
 </resources>
