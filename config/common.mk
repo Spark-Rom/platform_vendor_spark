@@ -2,6 +2,7 @@
 $(call inherit-product, vendor/spark/config/audio.mk)
 $(call inherit-product-if-exists, vendor/extras/product.mk)
 $(call inherit-product, vendor/spark/config/bootanimation.mk)
+$(call inherit-product, vendor/pixel-framework/config.mk)
 PRODUCT_BRAND ?= Spark
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
@@ -163,8 +164,8 @@ PRODUCT_PACKAGES += \
 
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    SystemUI \
-    Settings \
+    SystemUIGoogle \
+    SettingsGoogle \
     Launcher3QuickStep
 
 # Google Stuff
@@ -317,6 +318,12 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.face_unlock_service.enabled=$(TARGET_FACE_UNLOCK_SUPPORTED)
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.biometrics.face.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.biometrics.face.xml
+endif
+
+# Quick Tap
+ifneq ($(TARGET_SUPPORTS_QUICK_TAP),false)
+PRODUCT_COPY_FILES += \
+    vendor/spark/prebuilt/common/etc/sysconfig/quick_tap.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/quick_tap.xml
 endif
 
 # Adaptive Charging
