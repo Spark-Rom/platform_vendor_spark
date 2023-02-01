@@ -1,6 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <fonts-modification version="1">
 
+    <!-- LockScreen Clock fonts -->
+    <family customizationType="new-named-family" name="alienleague">
+        <font weight="300" style="normal">AlienLeague-Regular.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="balticbodden">
+        <font weight="300" style="normal">BalticBodden.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="balticstorm">
+        <font weight="300" style="normal">BalticStorm.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="bignoodletiltingitalic">
+        <font weight="300" style="normal">BigNoodleTilting-Italic.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="prodeltco">
+        <font weight="300" style="normal">ProdeltCo.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="zerofour">
+        <font weight="300" style="normal">ZeroFour.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="roadrage">
+        <font weight="300" style="normal">RoadRage-Regular.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="tourneymedium">
+        <font weight="500" style="normal">Tourney-Medium.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="mxwasgard">
+        <font weight="300" style="normal">mx-wasgard.ttf</font>
+    </family>
+    
+
     <!-- Accuratist -->
     <family customizationType="new-named-family" name="accuratist">
         <font weight="400" style="normal">Accuratist.ttf</font>

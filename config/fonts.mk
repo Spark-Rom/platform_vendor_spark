@@ -38,6 +38,18 @@ PRODUCT_PACKAGES += \
     ClockFontSimpleDaySourceOverlay \
     ClockFontSonySketchOverlay \
 
+# Lockscreen clock fonts
+PRODUCT_PACKAGES += \
+    ClockFontAlienLeagueOverlay \
+    ClockFontBalticBoddenOverlay \
+    ClockFontBalticStormOverlay \
+    ClockFontBigNoodleTiltingOverlay \
+    ClockFontMXWasgardOverlay \
+    ClockFontProdeltCoOverlay \
+    ClockFontRoadRageOverlay \
+    ClockFontTourneyMediumOverlay \
+    ClockFontZeroFourOverlay
+
 # Fonts
 PRODUCT_PACKAGES += \
     FontCustomOverlay \
