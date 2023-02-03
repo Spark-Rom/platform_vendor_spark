@@ -29,7 +29,21 @@
     <family customizationType="new-named-family" name="mxwasgard">
         <font weight="300" style="normal">mx-wasgard.ttf</font>
     </family>
-    
+    <family customizationType="new-named-family" name="cat">
+        <font weight="300" style="normal">Cat.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="concentrate">
+        <font weight="300" style="normal">Concentrate.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="karmaticarcade">
+        <font weight="300" style="normal">KarmaticArcade.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="liquidcrystal">
+        <font weight="300" style="normal">LiquidCrystal-Bold.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="vg5000">
+        <font weight="300" style="normal">VG5000-Regular.ttf</font>
+    </family>
 
     <!-- Accuratist -->
     <family customizationType="new-named-family" name="accuratist">
