@@ -36,7 +36,7 @@ PRODUCT_PACKAGES += \
     ClockFontSanFranciscoDisplayProSourceOverlay \
     ClockFontSamsungOneOverlay \
     ClockFontSimpleDaySourceOverlay \
-    ClockFontSonySketchOverlay \
+    ClockFontSonySketchOverlay
 
 # Lockscreen clock fonts
 PRODUCT_PACKAGES += \
@@ -88,3 +88,50 @@ PRODUCT_PACKAGES += \
     FontSamsungOneOverlay \
     FontSimpleDaySourceOverlay \
     FontSonySketchOverlay
+
+# Lockscreen date fonts
+PRODUCT_PACKAGES += \
+    DateFontAlienLeagueOverlay \
+    DateFontBalticBoddenOverlay \
+    DateFontBalticStormOverlay \
+    DateFontBigNoodleTiltingOverlay \
+    DateFontMXWasgardOverlay \
+    DateFontProdeltCoOverlay \
+    DateFontRoadRageOverlay \
+    DateFontTourneyMediumOverlay \
+    DateFontZeroFourOverlay \
+    DateFontCatOverlay \
+    DateFontConcentrateOverlay \
+    DateFontKarmaticArcadeOverlay \
+    DateFontLiquidCrystalOverlay \
+    DateFontAccuratistOverlay \
+    DateFontApiceOverlay \
+    DateFontAudimatOverlay \
+    DateFontBariolOverlay \
+    DateFontCoconOverlay \
+    DateFontComfortaaOverlay \
+    DateFontComicSansOverlay \
+    DateFontCoolstoryOverlay \
+    DateFontExotwoOverlay \
+    DateFontEvolveSansOverlay \
+    DateFontFluidSansOverlay \
+    DateFontGoogleSansOverlay \
+    DateFontGeometosOverlay \
+    DateFontHarmonySansOverlay \
+    DateFontJTLeonorOverlay \
+    DateFontLinotteOverlay \
+    DateFontMiSansOverlay \
+    DateFontNokiaPureOverlay \
+    DateFontNothingDotHeadlineOverlay \
+    DateFontOneplusSansOverlay \
+    DateFontOneplusSlateOverlay \
+    DateFontOppoSansOverlay \
+    DateFontProductSansVHOverlay \
+    DateFontRobotoCondensedOverlay \
+    DateFontRosemaryOverlay \
+    DateFontRubikOverlay \
+    DateFontSanFranciscoDisplayProSourceOverlay \
+    DateFontSamsungOneOverlay \
+    DateFontSimpleDaySourceOverlay \
+    DateFontSonySketchOverlay \
+    DateFontVG5000Overlay
