@@ -344,6 +344,12 @@ PRODUCT_COPY_FILES += \
     vendor/spark/prebuilt/common/etc/sysconfig/dreamliner.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/dreamliner.xml
 endif
 
+# DesktopMode
+PRODUCT_PACKAGES += \
+    DesktopMode
+
+$(call inherit-product, packages/services/VncFlinger/product.mk)
+
 # Enable ThinLTO Source wide Conditionally.
 ifeq ($(TARGET_BUILD_WITH_LTO),true)
 GLOBAL_THINLTO := true
