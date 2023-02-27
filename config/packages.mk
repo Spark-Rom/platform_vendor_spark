@@ -2,7 +2,7 @@
 PRODUCT_PACKAGES += \
     ThemePicker \
     SparkWallpaperStub \
-    ParallelSpacePrebuilt \
+    ParallelSpace \
     SparkThemesStub \
     SparkThemedIcons \
     QuickAccessWallet \
