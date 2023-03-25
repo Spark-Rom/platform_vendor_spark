@@ -1,2 +1,2 @@
-# Include LineageOS versions
-include $(TOPDIR)vendor/lineage/build/core/main_version.mk
+# Include SparkOS versions
+include $(TOPDIR)vendor/spark/build/core/main_version.mk
