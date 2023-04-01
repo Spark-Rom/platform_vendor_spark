@@ -206,8 +206,7 @@ PRODUCT_PACKAGE_OVERLAYS += \
     vendor/spark/overlay/no-rro
 
 PRODUCT_PACKAGES += \
-    NetworkStackOverlay \
-    TrebuchetOverlay
+    NetworkStackOverlay
 
 PRODUCT_EXTRA_RECOVERY_KEYS += \
     vendor/spark/build/target/product/security/spark
