@@ -222,6 +222,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     hosts.spark_adblock
 
+# Extra packages
+PRODUCT_PACKAGES += \
+    GameSpace
+
 # Additional props
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.error.receiver.system.apps=com.google.android.gms \
