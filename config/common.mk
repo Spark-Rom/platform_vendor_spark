@@ -211,6 +211,7 @@ PRODUCT_PACKAGE_OVERLAYS += \
     vendor/spark/overlay/no-rro
 
 PRODUCT_PACKAGES += \
+    DocumentsUIOverlay \
     NetworkStackOverlay
 
 PRODUCT_EXTRA_RECOVERY_KEYS += \
