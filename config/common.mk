@@ -226,7 +226,8 @@ PRODUCT_PACKAGES += \
 # Extra packages
 PRODUCT_PACKAGES += \
     GameSpace \
-    OmniJaws
+    OmniJaws \
+    ParallelSpace
 
 # Additional props
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
