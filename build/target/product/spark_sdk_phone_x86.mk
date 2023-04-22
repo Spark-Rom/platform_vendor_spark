@@ -19,6 +19,9 @@ include vendor/spark/build/target/product/spark_generic_target.mk
 # Always build modules from source
 PRODUCT_MODULE_BUILD_FROM_SOURCE := true
 
+# Always build modules from source
+PRODUCT_MODULE_BUILD_FROM_SOURCE := true
+
 # Enable mainline checking
 PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := relaxed
 
