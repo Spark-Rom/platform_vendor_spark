@@ -5,6 +5,7 @@ PRODUCT_SIZE := full
 
 # Extra cmdline tools
 PRODUCT_PACKAGES += \
+    unrar \
     zstd
 
 # Recorder
