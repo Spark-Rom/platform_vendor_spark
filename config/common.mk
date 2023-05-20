@@ -228,7 +228,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     GameSpace \
     OmniJaws \
-    ParallelSpace
+    ParallelSpace \
+    SparkWallpaperStub
 
 # Additional props
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
