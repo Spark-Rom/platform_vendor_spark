@@ -231,6 +231,11 @@ PRODUCT_PACKAGES += \
     ParallelSpace \
     SparkWallpaperStub
 
+ifneq ($(NO_APERTURE),true)
+PRODUCT_PACKAGES += \
+    Aperture
+endif
+
 # Additional props
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.error.receiver.system.apps=com.google.android.gms \
