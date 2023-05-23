@@ -2,7 +2,6 @@
 $(call inherit-product-if-exists, vendor/extra/product.mk)
 $(call inherit-product, vendor/spark/config/bootanimation.mk)
 $(call inherit-product, vendor/addons/config.mk)
-$(call inherit-product, external/faceunlock/config.mk)
 $(call inherit-product-if-exists, vendor/spark/audio/audio.mk)
 
 PRODUCT_BRAND ?= Spark
@@ -169,6 +168,12 @@ ifeq ($(WITH_GAPPS), true)
 # GApps
 $(call inherit-product, vendor/gms/products/gms.mk)
 include vendor/gms/products/board.mk
+endif
+
+# Faceunlock
+TARGET_FACE_UNLOCK_SUPPORTED ?= true
+ifeq ($(TARGET_FACE_UNLOCK_SUPPORTED),true)
+$(call inherit-product-if-exists, external/faceunlock/config.mk)
 endif
 
 # Enforce privapp-permissions whitelist
