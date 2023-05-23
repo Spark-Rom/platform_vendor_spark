@@ -15,16 +15,16 @@
 
 # Versioning System
 SPARK_NUM_VER_PRIMARY := 12
-SPARK_NUM_VER_SECONDARY := 2
-
+SPARK_NUM_VER_SECONDARY := 6
+SPARK_SECURITY_PATCH := 2022-08-05
 TARGET_PRODUCT_SHORT := $(subst spark_,,$(SPARK_BUILD_TYPE))
 
 SPARK_BUILD_TYPE ?= UNOFFICIAL
 
 # Only include Updater for official, weeklies, CI and nightly builds
-ifeq ($(filter-out OFFICIAL WEEKLIES NIGHTLY CI,$(SPARK_BUILD_TYPE)),)
+ifeq ($(filter-out OFFICIAL Official WEEKLIES NIGHTLY CI,$(SPARK_BUILD_TYPE)),)
     PRODUCT_PACKAGES += \
-        Updater
+        Updates
 endif
 
 # Sign builds if building an official, weekly, CI and nightly build

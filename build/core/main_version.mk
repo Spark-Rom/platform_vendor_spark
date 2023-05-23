@@ -12,4 +12,5 @@ ADDITIONAL_SYSTEM_PROPERTIES += \
     ro.spark.buildtype=$(SPARK_BUILD_TYPE) \
     ro.spark.fingerprint=$(ROM_FINGERPRINT) \
     ro.spark.version=$(SPARK_VERSION) \
+    ro.spark.build_security_patch=$(SPARK_SECURITY_PATCH) \
     ro.modversion=$(SPARK_VERSION)

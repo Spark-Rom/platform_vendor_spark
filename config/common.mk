@@ -9,10 +9,15 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 # Priv-app permissions
 PRODUCT_COPY_FILES += \
     vendor/spark/prebuilt/common/etc/permissions/privapp-permissions-spark.xml:system/etc/permissions/privapp-permissions-spark.xml \
+    vendor/spark/prebuilt/common/etc/init/smartcharge-init.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/smartcharge-init.rc \
     vendor/spark/prebuilt/common/etc/permissions/privapp-permissions-elgoog.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-elgoog.xml \
     vendor/spark/prebuilt/common/etc/permissions/googlesysconfig.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/elgoog.xml \
     vendor/spark/prebuilt/common/etc/permissions/privapp-permissions-settings.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-settings.xml \
     vendor/spark/prebuilt/common/etc/permissions/privapp-permissions-livedisplay.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-livedisplay.xml
+
+# Call Recording
+PRODUCT_COPY_FILES += \
+    vendor/spark/config/permissions/com.google.android.apps.dialer.call_recording_audio.features.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.google.android.apps.dialer.call_recording_audio.features.xml
 
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
@@ -27,6 +32,7 @@ ifeq ($(TARGET_BUILD_VARIANT),eng)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.adb.secure=0
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += persist.sys.usb.config=adb
 else
+
 # Enable ADB authentication
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.adb.secure=1
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += persist.sys.usb.config=none
@@ -81,6 +87,10 @@ PRODUCT_COPY_FILES += \
 # Enable wireless Xbox 360 controller support
 PRODUCT_COPY_FILES += \
     frameworks/base/data/keyboards/Vendor_045e_Product_028e.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/Vendor_045e_Product_0719.kl
+
+# Disable remote keyguard animation
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    persist.wm.enable_remote_keyguard_animation=0
 
 # Enforce privapp-permissions whitelist
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
@@ -170,8 +180,6 @@ ifeq ($(WITH_GAPPS), true)
 # GApps
 $(call inherit-product, vendor/gms/products/gms.mk)
 include vendor/gms/products/board.mk
-PRODUCT_PACKAGES += \
-     ThemedIconsOverlay
 endif
 
 
@@ -193,7 +201,31 @@ PRODUCT_PACKAGES += \
     WavyWiFiOverlay \
     RoundWiFiOverlay \
     InsideWiFiOverlay \
-    BarsWiFiOverlay
+    BarsWiFiOverlay \
+    AquariumSignalOverlay \
+    ButterflySignalOverlay \
+    DaunSignalOverlay \
+    DecSignalOverlay \
+    DeepSignalOverlay \
+    EqualSignalOverlay \
+    FanSignalOverlay \
+    HuaweiSignalOverlay \
+    RelSignalOverlay \
+    ScrollSignalOverlay \
+    SeaSignalOverlay \
+    StackSignalOverlay \
+    WannuiSignalOverlay \
+    WindowsSignalOverlay \
+    WingSignalOverlay \
+    CircleSignalOverlay \
+    IosSignalOverlay \
+    MiniSignalOverlay \
+    OdinSignalOverlay \
+    PillsSignalOverlay \
+    RomanSignalOverlay \
+    WeedWiFiOverlay \
+    DoraSignalOverlay \
+    DoraWiFiOverlay
 
 # Navbar styles
 PRODUCT_PACKAGES += \
@@ -225,7 +257,7 @@ endif
 
 # GamingMode
 PRODUCT_PACKAGES += \
-    GamingMode
+    GameSpace
 
 # Settings Intelligence
 PRODUCT_PACKAGES += \

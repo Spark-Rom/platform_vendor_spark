@@ -15,7 +15,7 @@ fi
 
 touch $Changelog
 
-for i in $(seq 5);
+for i in $(seq 30);
 do
 export After_Date=`/bin/date --date="$i days ago" +%m-%d-%Y`
 k=$(expr $i - 1)
@@ -28,7 +28,8 @@ while read path;
 do
 	CLOG=$(git --git-dir ./${path}/.git log --oneline --after=$After_Date --until=$Until_Date --pretty=tformat:"%h  %s  [%an]" --abbrev-commit --abbrev=7);
 	if [ -n "$CLOG" ]; then
-		echo "\n* ${path}\n${CLOG}\n" >> $Changelog;
+		echo project $path >> $Changelog
+		git --git-dir ./${path}/.git log --oneline --after=$After_Date --until=$Until_Date >> $Changelog
 	fi
 done < ./.repo/project.list
 echo "" >> $Changelog;

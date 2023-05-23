@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name  -->
+    <string name="app_name">Spark Themes</string>
+
+    <!-- Color section -->
+    <string name="bundle1_color_name">Carbon</string>
+    <string name="bundle2_color_name">Paper</string>
+    <string name="bundle3_color_name">Sun</string>
+    <string name="default_color_name">Classic</string>
+    <string name="bundle_name_bundle1" translatable="false">@string/bundle1_color_name</string>
+    <string name="bundle_name_bundle2" translatable="false">@string/bundle2_color_name</string>
+    <string name="bundle_name_bundle3" translatable="false">@string/bundle3_color_name</string>
+    <string name="bundle_name_default" translatable="false">@string/default_color_name</string>
+</resources>
