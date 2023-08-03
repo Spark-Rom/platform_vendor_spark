@@ -213,6 +213,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_EXTRA_RECOVERY_KEYS += \
     vendor/spark/build/target/product/security/spark
 
+PRODUCT_PACKAGES += \
+    SparkWallpaperStub
+
 # AdBlock
 PRODUCT_PACKAGES += \
     hosts.spark_adblock
