@@ -248,7 +248,8 @@ PRODUCT_EXTRA_RECOVERY_KEYS += \
 
 # Extra Packages
 PRODUCT_PACKAGES += \
-    SparkWallpaperStub
+    SparkWallpaperStub \
+    GameSpace
 
 # Pixel customization
 TARGET_SUPPORTS_GOOGLE_RECORDER ?= true
