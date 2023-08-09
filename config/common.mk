@@ -251,6 +251,15 @@ PRODUCT_PACKAGES += \
     SparkWallpaperStub \
     GameSpace
 
+# FaceUnlock
+ifneq ($(TARGET_FACE_UNLOCK_OPTOUT), true)
+PRODUCT_PACKAGES += \
+    LMOFaceUnlock
+
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.biometrics.face.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.biometrics.face.xml
+endif
+
 # Pixel customization
 TARGET_SUPPORTS_GOOGLE_RECORDER ?= true
 TARGET_INCLUDE_STOCK_ARCORE ?= true
