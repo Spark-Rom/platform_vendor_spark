@@ -249,7 +249,8 @@ PRODUCT_EXTRA_RECOVERY_KEYS += \
 # Extra Packages
 PRODUCT_PACKAGES += \
     SparkWallpaperStub \
-    GameSpace
+    GameSpace \
+    OmniJaws
 
 # FaceUnlock
 ifneq ($(TARGET_FACE_UNLOCK_OPTOUT), true)
