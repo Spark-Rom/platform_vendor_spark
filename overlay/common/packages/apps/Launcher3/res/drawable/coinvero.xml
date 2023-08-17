@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<adaptive-icon
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <background android:drawable="@color/primaryBackground" />
+    <foreground>
+        <inset android:drawable="@drawable/coinvero_foreground" android:inset="32.000004%" />
+    </foreground>
+    <monochrome>
+        <inset android:drawable="@drawable/coinvero_foreground" android:inset="27.999996%" />
+    </monochrome>
+</adaptive-icon>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:tint="@color/primaryForeground" android:height="192.0dip" android:width="192.0dip" android:viewportWidth="192.0" android:viewportHeight="192.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@color/primaryForeground" android:pathData="M41,111a4,4 0,0 1,4 -4h28a4,4 0,0 1,0 8L45,115a4,4 0,0 1,-4 -4ZM34,96a4,4 0,0 1,4 -4h42a4,4 0,1 1,0 8L38,100a4,4 0,0 1,-4 -4ZM41,81a4,4 0,0 1,4 -4h28a4,4 0,1 1,0 8L45,85a4,4 0,0 1,-4 -4Z" />
+    <path android:fillColor="@color/primaryForeground" android:pathData="M65.05,65.6A31,31 0,1 0,80.92 117.92a6,6 0,0 1,8.49 8.49,43 43,0 0,1 -71.55,-17.92A43,43 0,1 1,102 96a31,31 0,1 0,9.08 -21.92,6 6,0 0,1 -8.49,-8.49 43,43 0,0 1,54.3 -5.35,43 43,0 0,1 15.84,52.21 43,43 0,0 1,-48.12 25.72A43,43 0,0 1,90 96a31,31 0,0 0,-24.95 -30.4Z" android:fillType="evenOdd" />
+    <path android:fillColor="@color/primaryForeground" android:pathData="M113.42,95.21a4,4 0,0 1,5.37 -1.79L133,100.53l14.21,-7.11a4,4 0,0 1,3.58 7.16l-16,8a4,4 0,0 1,-3.58 0l-16,-8a4,4 0,0 1,-1.79 -5.37Z" android:fillType="evenOdd" />
+    <path android:fillColor="@color/primaryForeground" android:pathData="M113.42,107.21a4,4 0,0 1,5.37 -1.79L133,112.53l14.21,-7.11a4,4 0,0 1,3.58 7.16l-16,8a4,4 0,0 1,-3.58 0l-16,-8a4,4 0,0 1,-1.79 -5.37ZM130.91,71.59a4,4 0,0 1,4.18 0l16,9.82a4,4 0,0 1,-0.27 6.97l-16,8.18a4,4 0,0 1,-3.64 0l-16,-8.18a4,4 0,0 1,-0.27 -6.97l16,-9.82ZM125.16,84.5L133,88.51l7.84,-4.01L133,79.69l-7.84,4.81Z" android:fillType="evenOdd" />
+</vector>

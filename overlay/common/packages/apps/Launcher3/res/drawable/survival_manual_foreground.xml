@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:tint="@color/primaryForeground" android:height="192.0dip" android:width="192.0dip" android:viewportWidth="192.0" android:viewportHeight="192.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#00000000" android:pathData="M99,91.91s19.76,17.85 11.15,30.09c6.97,-1.3 16.2,-5.72 21.23,-14.5M99,45l23.31,30.09 6.08,-6.12c2.53,5.1 4.26,9.77 5.3,14.03M99,91.91S85.7,103.93 85.68,115M99,45 L75.69,75.09l-6.08,-6.12C62.6,83.09 61.81,93.91 64.26,102" android:strokeColor="@color/primaryForeground" android:strokeWidth="12.0" android:strokeLineCap="round" android:strokeLineJoin="round" />
+    <path android:fillColor="#00000000" android:pathData="M59,136m-34,0a34,34 0,1 1,68 0a34,34 0,1 1,-68 0" android:strokeColor="@color/primaryForeground" android:strokeWidth="12.0" android:strokeLineJoin="round" />
+    <path android:fillColor="#00000000" android:pathData="M136,96m-10,0a10,10 0,1 1,20 0a10,10 0,1 1,-20 0" android:strokeColor="@color/primaryForeground" android:strokeWidth="10.0" android:strokeLineJoin="round" />
+    <path android:fillColor="#00000000" android:pathData="M59.5,170h86.54c3.31,0 5.97,-2.69 5.97,-6V28a6,6 0,0 0,-6 -6H52a6,6 0,0 0,-6 6v76" android:strokeColor="@color/primaryForeground" android:strokeWidth="12.0" android:strokeLineCap="round" android:strokeLineJoin="round" />
+    <path android:fillColor="#00000000" android:pathData="m54,130 l19,-7.5 -9,19.5 -19,7 9,-19Z" android:strokeColor="@color/primaryForeground" android:strokeWidth="8.0" android:strokeLineJoin="round" />
+    <path android:fillColor="#00000000" android:pathData="M59,136m-6,0a6,6 0,1 1,12 0a6,6 0,1 1,-12 0" android:strokeColor="@color/primaryForeground" android:strokeWidth="6.0" android:strokeLineJoin="round" />
+    <path android:fillColor="#00000000" android:pathData="M136,86h24v20h-24" android:strokeColor="@color/primaryForeground" android:strokeWidth="10.0" android:strokeLineCap="round" android:strokeLineJoin="round" />
+</vector>

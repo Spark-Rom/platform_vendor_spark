@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:tint="@color/primaryForeground" android:height="192.0dip" android:width="192.0dip" android:viewportWidth="192.0" android:viewportHeight="192.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="#00000000" android:pathData="M75.98,145.02L50.84,145.02L50.84,115.31c0,-6.33 2.46,-9.74 7.99,-10.42h17.26a18.87,18.87 0,0 1,14.81 5.37,18.38 18.38,0 0,1 5.4,14.64c0,12.66 -7.74,20.21 -20.21,20.21zM50.79,64.71v-7.79c0,-6.82 2.96,-10.13 9.37,-10.52h12.92c11.04,0 17.75,6.53 17.75,17.53 0,8.28 -4.54,18.02 -17.26,18.02L50.89,81.95ZM108.18,94.42 L103.64,91.89 107.59,88.47c4.63,-3.89 12.32,-12.76 12.32,-28C119.91,37.1 101.57,22 73.22,22h-35.99C28.79,22.29 22.08,29.09 22,37.44v132.46h51.86c31.55,0 51.87,-16.95 51.87,-43.25 0,-14.12 -6.56,-26.3 -17.65,-32.38" android:strokeColor="@drawable/booking_foreground__0" android:strokeWidth="12.0" android:strokeLineJoin="round" />
+    <path android:fillColor="@color/primaryForeground" android:pathData="M140.14,152.17a11.81,11.71 0,1 0,23.61 0a11.81,11.71 0,1 0,-23.61 0z" android:strokeColor="@color/primaryForeground" android:strokeWidth="8.0" android:strokeLineJoin="round" />
+</vector>
