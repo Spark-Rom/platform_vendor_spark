@@ -113,10 +113,6 @@ PRODUCT_PACKAGES += \
     LineageParts \
     LineageSettingsProvider
 
-# Config
-PRODUCT_PACKAGES += \
-    SimpleDeviceConfig
-
 # Extra tools in Spark
 PRODUCT_PACKAGES += \
     bash \
