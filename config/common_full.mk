@@ -3,9 +3,14 @@ $(call inherit-product, vendor/spark/config/common_mobile.mk)
 
 PRODUCT_SIZE := full
 
+NO_APERTURE ?= false
+ifneq ($(NO_APERTURE),true)
+PRODUCT_PACKAGES += \
+    Aperture
+endif
+
 # Apps
 PRODUCT_PACKAGES += \
-    Aperture \
     Etar \
     Profiles \
     Recorder
