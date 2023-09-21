@@ -3,6 +3,7 @@ $(call inherit-product-if-exists, vendor/extra/product.mk)
 $(call inherit-product, vendor/spark/config/bootanimation.mk)
 $(call inherit-product, vendor/addons/config.mk)
 $(call inherit-product, vendor/pixel-framework/config.mk)
+$(call inherit-product, packages/services/VncFlinger/product.mk)
 
 PRODUCT_BRAND ?= Spark
 
@@ -224,6 +225,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.biometrics.face.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.biometrics.face.xml
 endif
+
+# DesktopMode
+PRODUCT_PACKAGES += \
+    DesktopMode
+
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.software.freeform_window_management.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.software.freeform_window_management.xml
 
 # Pixel customization
 TARGET_SUPPORTS_GOOGLE_RECORDER ?= true
