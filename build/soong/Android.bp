@@ -74,7 +74,7 @@ aapt_version_code {
 soong_config_module_type {
     name: "camera_override_format_from_reserved",
     module_type: "cc_defaults",
-    config_namespace: "lineageGlobalVars",
+    config_namespace: "sparkGlobalVars",
     bool_variables: ["camera_override_format_from_reserved"],
     properties: ["cppflags"],
 }
